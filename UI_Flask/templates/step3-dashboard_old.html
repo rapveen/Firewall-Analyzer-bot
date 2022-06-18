@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/css/styles.css" rel="stylesheet"/>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
+    <script src="/static/js/dataTables.bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="/static/js/plotly-latest.min.js"></script>
+    <script src="/static/js/script.js"></script>
+ <style>
+
+
+/* Important part */
+.content {
+  background-color: green;
+}
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.wrap {
+    width: 1060px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
+.text_over_image {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 20;
+  color: Blue;
+  /*text-shadow: 0 1px 2px rgba(0,0,0,.6);*/
+ font-size:10pt;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+       margin-bottom: 1px;   
+}
+
+/************Without Bootstrap*************/
+/*table.dtf thead tr{
+    display:block;
+}
+
+table.dtf th{
+    width:100%;
+}
+
+table.dtf tr{
+    width:100%;
+}
+
+
+table.dtf tbody{
+  display:block;
+  height:120px;
+  overflow:auto;
+}
+*/
+
+/************Bootstrap*************/
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 175px;
+  overflow-y: auto;
+  width: 100%;
+  background-color: white;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	
+        </style>
+
+    <title>Dashboard | Firewall Analyzer BOT</title>
+
+</head>
+<body style="background: #F8F8F8;">
+<!--Top Navigation Bar-->
+<nav class="navbar" style="background: #FFFFFF;">
+	<div class="container-fluid">
+   
+		<div>
+      
+			<span class="icon-bar"><img src="/static/img/holmes_logo.png" alt="Wipro logo" height="40"/></span> 
+			<span  style="color:#ccc5c5;font-size:20pt;">|</span>
+			<span class="icon-bar" style="color:#068fd0;font-size:15pt;"> <strong>Firewall Analyzer BOT</strong></span>
+			
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><span class="icon-bar"><img src="/static/img/execution.png" alt="execution"/>
+						<div class="carousel-caption">
+							<p style="color:#068fd0;">{{exec_count}}</p>
+						</div>
+					</span>
+				</li>  
+				<li><a id="pdfExportUrl" href="#" target="_blank" onclick="location.href=this.href+'?key='+scrt_var;return false;"><span class="wrap"><img src="/static/img/ExportPdf.png" alt="ExportPdf" height="30" width="30" /></span></a></li>
+				<li><a id="csvExportUrl" href="#" target="_blank" onclick="location.href=this.href+'?key='+scrt_var;return false;"><span class="wrap"><img src="/static/img/ExportExcel.png" alt="ExportExcel" height="30" width="30" /></span></a></li>
+				<li><a href="/nab/home_page"><span class="wrap"><img src="/static/img/home_onpress.png" alt="Home"/></span></a></li>
+				<li><a href="#"><span class="icon-bar"><img src="/static/img/info_onpress.png" alt="info"/></span></a></li>
+				<li><a id="logoutId" href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		  </ul>
+		</div>
+	</div>
+
+</nav>
+
+<!--DashBoard CPU and Interfaces -->
+<div class="col-md-12" style="border-top: 1px solid #0000CC;">
+
+	<!--Second Level  Navigation Bar (DashBoard CPU and Interfaces)-->
+   <ul class="nav nav-tabs" >       
+		<li class="active"><a data-toggle="tab" href="#dashboard"><h4 style="margin-top:0px;margin-bottom:0px;">Dashboard</h4></a></li>
+		<li><a data-toggle="tab" href="#Policy findings"><h4 style="margin-top:0px;margin-bottom:0px;">Policy findings</h4></a></li>
+        <li><a data-toggle="tab" href="#interfaces"><h4 style="margin-top:0px;margin-bottom:0px;">Interfaces</h4></a></li>
+        <li><a data-toggle="tab" href="#Observation"><h4 style="margin-top:0px;margin-bottom:0px;">Observation</h4></a></li>
+    </ul>
+	
+	<!--Tab Container for DashBoard, CPU and Interfaces-->
+    <div class="tab-content">
+		<!--Tab Container for DashBoard-->
+		<div id="dashboard" class="tab-pane fade in active" >
+        
+			<!--DashBoard First section Contains Device summary, CPU Utilization and Top CPU Processes-->
+			<div class="row" style="border-top: 1px solid #C0C0C0; height:450px;">
+					<!--DashBoard First section Contains Device summary-->
+					<div class="col-md-4" name="DeviceSummary" style="height:400px;overflow:auto;">
+						<h4><strong>Device summary:</strong></h4>
+						<table class="table table-striped table-bordered  table-hover" style="background-color: white; height: 325px;">
+							<tr>
+								<td><strong>Hostname:</strong><br>
+								{{ overview[0] }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Device info:</strong><br>
+								{{ overview[1] }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Image version:</strong><br>
+								{{ overview[2] }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Uptime:</strong><br>
+								{{ overview[3] }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Config Register:</strong><br>
+								{{ overview[4] }}
+								</td>
+							</tr>
+							<tr>
+								<td><strong>Last configuration modified:</strong><br>
+								{{ overview[5] }}
+								</td>
+							</tr>
+							
+						</table>
+						
+					</div>
+					<!--DashBoard First section Contains CPU Utilization-->
+					<div class="row col-md-4" name="CPUUtilization" style="height:450px">
+						<h4><strong>CPU Utilization:</strong></h4>
+						
+						<table>
+							<tr style="padding-left: 0px; height=105px">
+								<td>
+									<div  style="padding-left: 0px; height:105px;margin-bottom:0px">
+						
+										<div class="tile orange" style="margin-bottom:25px;padding: 18px;">
+											<p>5 sec utilization</p>
+											<h3 class="title"><span class="glyphicon glyphicon-signal"></span>&nbsp;<span style="font-size: 20px">{{ cpu_tiles[0] }}</span></h3>
+							
+										</div>
+									</div>
+								</td>
+						 
+								<td>
+									<div  style="padding-left: 5px; height:105px; margin-bottom:0px;">
+										<div class="tile purple" style="margin-bottom:25px;padding: 18px;">
+											<p>1 min utilization</p>
+											<h3 class="title"><span class="glyphicon glyphicon-signal"></span>&nbsp;<span style="font-size: 20px">{{ cpu_tiles[1] }}</span></h3>
+							
+										</div>
+									</div>
+								</td>
+						 
+								<td>					 
+									<div  style="padding-left: 5px; height:105px;margin-bottom:0px;">
+										<div class="tile green" style="margin-bottom:25px;padding: 18px;">
+											<p>5 min utilization</p>
+											<h3 class="title"><span class="glyphicon glyphicon-signal"></span>&nbsp;<span style="font-size: 20px">{{ cpu_tiles[2] }}</span></h3>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<!--Erro Log
+							<tr style="padding-left: 0px;width: 100%;">
+								<td colspan="3">
+									
+									<div class="col-sm-4" style="padding-left: 0px;position: relative; width: 100%;padding-right: 0px;padding-top:5px;padding-bottom: 5px;">
+									
+										<div style="width: 100%;">
+											<button type="button" style="width: 100%;" class="btn btn-danger" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">Inferences</button>
+							   
+										</div>
+							
+									</div>
+								</td>
+							</tr>
+						 -->
+							<tr style="padding-left: 0px;">
+								<td colspan="3" style="padding-left: 0px; ">
+						 
+								<h4><strong>Memory Utilization:</strong></h4>
+									<table id="memory_utilization_TbleId" class="table table-striped table-bordered table-hover" style="padding-left: 0px; background-color:#d4d2d2">
+									
+							<thead>
+								<tr>
+									<th class="col-xs-3" style="color: #807d7d">Memory</th><th class="col-xs-2" style="color: #807d7d">Total</th><th class="col-xs-2" style="color: #807d7d">Used</th><th class="col-xs-2" style="color: #807d7d">Free</th>
+								</tr>
+							</thead>
+							<tbody style="background-color: white;">
+								
+							</tbody>
+						</table>	
+								</td>
+							</tr>
+						 </table>
+					   	
+					</div>
+				   <!--DashBoard First section Contains Top CPU Processes-->
+					<div class="col-md-4" name="DeviceSummary" style="padding-top: 0px;padding-left: 20px;  height=450px" >
+						<h4><strong>Summary of findings:</strong></h4>
+						<table class="table table-striped table-bordered  table-hover" style="background-color: white; height: 325px;">
+
+							<tr>
+								<td><strong>EOL:</strong><br>
+
+								</td>
+							</tr>
+							<tr>
+								<td><strong>EOS:</strong><br>
+
+								</td>
+							<tr>
+								<td><strong>Policy findings :</strong><br>
+				
+									<table>
+										<tr style="padding-left: 0px; height=50px">
+											<td>
+												<div  style="padding-left: 0px; height:50px;margin-bottom:0px">
+									
+													<div class="tile red" style="margin-bottom:25px;padding: 18px;background-color:red;">
+														<p>Critical</p>
+														<h3 class="title"><span class=""></span>&nbsp;<span style="font-size: 20px"></span></h3>
+										
+													</div>
+												</div>
+											</td>
+									 
+											<td>
+												<div  style="padding-left: 5px; height:50px; margin-bottom:0px;">
+													<div class="tile orange" style="margin-bottom:25px;padding: 18px;">
+														<p>High</p>
+														<h3 class="title"></span>&nbsp;<span style="font-size: 20px"></span></h3>
+										
+													</div>
+												</div>
+											</td>
+									 
+											<td>					 
+												<div  style="padding-left: 5px; height:50px;margin-bottom:0px;">
+													<div class="tile yellow" style="margin-bottom:25px;padding: 18px;background-color:yellow;">
+														<p>Medium</p>
+														<h3 class="title"><span class=""></span>&nbsp;<span style="font-size: 20px"></span></h3>
+													</div>
+												</div>
+											</td>
+											<td>					 
+												<div  style="padding-left: 5px; height:50px;margin-bottom:0px;">
+													<div class="tile green" style="margin-bottom:25px;padding: 18px;">
+														<p>low</p>
+														<h3 class="title"><span class=""></span>&nbsp;<span style="font-size: 20px"></span></h3>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+								
+							</tr>
+							<tr>
+								<td><strong>Errors:</strong><br>
+
+								</td>
+							</tr>
+
+							
+						</table>
+						
+					</div>
+
+		<!--Tab Container for Inferences-->
+		<div id="Policy findings" class="tab-pane fade">
+          <div class="col-md-6 col-md-offset-2 row">
+             <!--Input rate mbps:-->
+				<div class="col-md-12 row" class="container"  style="border-top: 0px solid #C0C0C0; height:500px;">
+					<br/><br/><br/><br/>
+					<table id="log_error_code_TbleId" class="table table-fixed table-striped table-hover " style="background-color: #d4d2d2">
+						<thead>
+						  <tr>
+							<th class="col-xs-2" style="color: #807d7d">Sl No.</th>
+							<th class="col-xs-10" style="color: #807d7d">Policy findings details</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  
+						</tbody>
+					 </table>
+				</div>
+				<!--Output rate mbps:-->
+          </div>
+      </div>
+
+</div>     
+		
+		<!--Tab Container for Interfaces-->
+		<div id="interfaces" class="tab-pane fade">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-body">
+                        <h3>Interface details:</h3>
+                        {{ interfaces.to_html(index=False, classes="table table-striped table-bordered table-hover tbl5") | safe }}
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+</div>
+	</div><!--end Dashboard-->
+    </div> <!--tab-content-->
+</div>
+
+<!---------------Test ENd-->
+
+<!---Process CPU History Model Pane --->
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  
+  <!-- Modal1 -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+       Process CPU History
+        </h4>
+        </div>
+        <div class="modal-body">
+          <p> 
+                <pre>{{cpu_history_data}}</pre>
+           
+           </p>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end Modal 1-->
+  
+  <!-- Modal 2 -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">
+       Inferences
+        </h4>
+        </div>
+        <div class="modal-body">
+		
+          
+				<!--Input rate mbps:-->
+				<div class="col-md-12 row" class="container"  style="border-top: 0px solid #C0C0C0;">
+					
+					<table id="log_error_code_TbleId" class="table table-fixed table-striped table-hover " style="background-color: #d4d2d2">
+						<thead>
+						  <tr>
+							<th class="col-xs-6" style="color: #807d7d">Error Code</th>
+							<th class="col-xs-6" style="color: #807d7d">Inference</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  
+						</tbody>
+					 </table>
+				</div>
+				<!--Output rate mbps:-->
+				
+
+			
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end Modal 2-->
+  
+</div>
+<!---------------Test ENd-->
+
+<script>
+    $(document).ready(function() {
+        //$('.tbl1').DataTable();
+        $('.tbl2').DataTable();
+        //$('.tbl3').DataTable();
+        //$('.tbl4').DataTable();
+        $('.tbl5').DataTable();
+    } );
+</script>
+<footer class="container-fluid text-center">
+  <p>Copyright 2017 © Wipro Ltd.</p>
+</footer>
+
+</body>
+</html>

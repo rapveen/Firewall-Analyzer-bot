@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html lang="en">
+<head>
+  <title>HOLMES FOR IT - Engineering</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+  <link rel="stylesheet" href="/static/Bootstrap/css/bootstrap.min.css">
+  <script src="/static/Bootstrap/js/jquery-3.1.1.min.js"></script>
+  <script src="/static/Bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.dataTables.min.js"></script>
+    <script src="/static/js/dataTables.bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="/static/js/plotly-latest.min.js"></script>
+    <script src="/static/js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/Bootstrap/css/style.css" />
+  
+</head>
+
+
+<body>
+<!--------------Header-------------->
+    <header class="container-fluid">
+        <aside><img src="/static/Bootstrap/images/Logo_holmes.png" class="img-responsive"/></aside>
+        <section></section>
+        <aside><img src="/static/Bootstrap/images/Logo_wipro.png" class="img-responsive"/></aside>    
+    </header>
+    
+<!--------------Form-------------->   
+    <div class="container-fluid bg">
+      <article id="formContaner">
+          <aside class="shadowLeft"><img src="/static/Bootstrap/images/shadow_left.png" alt="shadow" class="img-responsive" /></aside>
+          <section id="formMidlleSection">
+             <div class="loginHeader">
+          <!--  <h4>WELCOME TO</h4>--><br /><br />
+              <h1><img src="/static/Bootstrap/images/Logo_Tool.png" class="img-responsive" /></h1>
+            </div>  
+             
+             <section class="formInputs">
+             <h3>Please Login Here</h3>
+               <form action="" method="POST" onsubmit="return loginAuth();" autocomplete="off">
+                 <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="username" type="text" class="form-control"  name="username" placeholder="WIPRO AD ID" autocomplete="new-password">
+				<input type="hidden" name="frm_ck" />
+              </div>
+                 <div class="input-group">
+                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                 <input id="password" type="password" class="form-control" name="password" placeholder="PASSWORD" autocomplete="new-password">
+              </div>
+              
+           
+             
+             <!--
+                 <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-cog"></i></span>
+                  <select class="form-control input-SM" name="Domain" >
+                     <option>SELECT DOMAIN</option>
+                     <option>ADMIN</option>
+                     <option>WIPRO</option>
+                 </select>
+             </div>
+			-->
+            
+            
+            <!--------------Notification msg  area and it will handle programmatically-------------->
+           <div class="error-container errorMainDiv text-danger" align="center">
+                {% if error %}
+				<span class="erro errorSpan" ng-show="loginForm.UserName.$error.required">{{error}}</span> 
+                 {% endif %}      
+             </div>
+ 
+              
+             <!--------------Login Button-------------->
+                <div class="row">
+                     <!-- <div class="col-sm-10"> <p><i class="glyphicon glyphicon-user"></i>Forgot Password? Please contact <a href="#">Administrator</a></p></div>-->
+                     <!--<div class="col-sm-12 margin"><button type="button" class="btn btn-default pull-right">Login</button></div>  -->      
+                    <div class="col-sm-12 margin"><input type="submit" class="btn btn-default pull-right" value="Login"></div>           
+                 </div>
+               </form>
+            </section>             
+          </section>
+          <aside class="shadowRight"><img src="/static/Bootstrap/images/shadow_right.png" alt="shadow" class="img-responsive" /></aside>
+      </article>
+    </div>
+    
+<!--------------Footer-------------->
+    <footer class="container-fluid">      
+    	<div class="row">
+            <div class="col-sm-12">
+            
+          <b>Copyright 2017 © Wipro Ltd.</b><br /><br />   
+          Disclaimer:  This site is intended solely for use by Wipro’s authorized users. Use of this site is subject to the Legal Notices, Terms of Use, and Privacy 
+Statement located on this site. Use of the site by customers and partners, if authorized, is also subject to the terms of your contract(s) with Wipro. Use of this site by Wipro employees is also subject to company policies, including the Code of Conduct. Unauthorized access or breach of these terms may result in termination of your authorization to use this site and/or civil and criminal penalties. </div>            
+        </div>        
+    </footer>
+</body>
+</html>

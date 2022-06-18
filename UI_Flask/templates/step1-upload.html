@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/script.js"></script>
+
+	<style>
+	.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+.stylehR
+{
+width: 80%;
+height: 8px;
+margin-left: auto;
+margin-right: auto;
+background-color:#FF0066;
+color:#FF0066;
+border: 0 none;
+margin-top: 5px;
+margin-bottom:5px;
+}
+	</style>
+
+    <title>Upload Data | Firewall Analyzer BOT</title>
+</head>
+<body style="background: #F8F8F8;">
+<nav class="navbar" style="background: #FFFFFF;">
+	<div class="container-fluid">
+   
+		<div>
+      
+			<span class="icon-bar"><img src="/static/img/holmes_logo.png" alt="Wipro logo" height="40"/></span> 
+			<span  style="color:#ccc5c5;font-size:20pt;">|</span>
+			<span class="icon-bar" style="color:#068fd0;font-size:15pt;"> <strong>Firewall Analyzer BOT</strong></span>		
+			
+			<ul class="nav navbar-nav navbar-right">				
+				<li><a id="logoutId" href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		  </ul>
+		</div>
+	</div>
+
+</nav>
+
+<div class="row" style="border-top: 1px solid #C0C0C0; height:450px;">
+<!---
+    <div class="col-md-4 col-md-offset-4">
+						<div style="width: 100%; height: 20px; border-bottom: 0px solid #b3b3b3; text-align: center">
+					
+					</div>
+						<h4><strong>Device Details:</strong></h4>
+						<table class="table table-fixed table-striped table-hover " style="background-color: #d4d2d2;">
+						<thead>
+						
+						  <tr>
+							<th class="col-xs-4" style="color: #807d7d">Device IP</th>
+							<th class="col-xs-8" style="color: #807d7d"><input type="name" name="ip" size="35" /> </th>
+						  </tr>
+						  <tr>
+							<th class="col-xs-4" style="color: #807d7d">Password</th>
+							<th class="col-xs-8" style="color: #807d7d"><input type="name" name="pwd" size="35" /> </th>
+						  </tr>
+						  <tr>
+							<th class="col-xs-4" style="color: #807d7d">Enable Password</th>
+							<th class="col-xs-8" style="color: #807d7d"><input type="name" name="enb_pwd" size="35" /> </th>
+						  </tr>
+						  
+						</thead>
+						<tbody>
+						  
+						</tbody>
+					 </table>
+						
+					
+					<br>
+					
+					<div style="width: 100%; height: 20px; border-bottom: 1px solid #b3b3b3; text-align: center">
+					  <span style="font-size: 20px; background-color: #F8F8F8; padding: 0 10px;">
+						Or
+					  </span>
+					</div>
+	
+								
+							
+	</div>-->
+	 <div class="col-md-4 col-md-offset-4">
+	<form method=post enctype=multipart/form-data>
+					<h4><strong><br /><br />Upload Console Output:<strong></h4><br />
+						<label class="btn btn-default btn-file">
+							<input type="file" id="uploadfileId" name="file"  /> 
+						</label>&nbsp;&nbsp;<label>{{error}}</label>
+						<br /><br />
+					   
+						<input id="uplod_Btn" type=submit value=Analyze   class="btn btn-danger pull-right"/>			
+					</form>
+	  </div>
+</div>
+
+
+
+
+
+ 
+
+<footer class="footer">
+  <p>Copyright 2017 © Wipro Ltd.</p>
+</footer>
+
+</body>
+</html>
