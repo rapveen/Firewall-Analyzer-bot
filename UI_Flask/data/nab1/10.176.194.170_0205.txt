@@ -1,0 +1,3604 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2017.05.02 15:39:36 =~=~=~=~=~=~=~=~=~=~=~=
+sh tech
+BAT-WER-GBSF01-ASA-01# sh tech-support 
+
+Cisco Adaptive Security Appliance Software Version 9.1(7)16 
+
+Compiled on Thu 30-Mar-17 17:39 by builders
+System image file is "disk0:/asa917-16-k8.bin"
+Config file at boot was "startup-config"
+
+BAT-WER-GBSF01-ASA-01 up 10 days 13 hours
+
+Hardware:   ASA5506, 2048 MB RAM, CPU Pentium 4 Celeron 2000 MHz,
+Internal ATA Compact Flash, 64MB
+BIOS Flash AT49LW080 @ 0xfff00000, 1024KB
+
+Encryption hardware device : Cisco ASA-55xx on-board accelerator (revision 0x0)
+                             Boot microcode        : CN1000-MC-BOOT-2.00 
+                             SSL/IKE microcode     : CNlite-MC-SSLm-PLUS-2.08
+                             IPSec microcode       : CNlite-MC-IPSECm-MAIN-2.09
+                             Number of accelerators: 1
+
+ 0: Ext: GigabitEthernet0/0  : address is 0012.808c.400c, irq 9
+ 1: Ext: GigabitEthernet0/1  : address is 0012.808c.400d, irq 9
+ 2: Ext: GigabitEthernet0/2  : address is 0012.808c.400e, irq 9
+ 3: Ext: GigabitEthernet0/3  : address is 0012.808c.400f, irq 9
+ 4: Ext: Management0/0       : address is 0012.808c.4010, irq 11
+ 5: Int: Internal-Data0/0    : address is 0000.0001.0002, irq 11
+ 6: Int: Internal-Control0/0 : address is 0000.0001.0001, irq 5
+
+Licensed features for this platform:
+Maximum Physical Interfaces       : Unlimited      perpetual
+Maximum VLANs                     : 150            perpetual
+Inside Hosts                      : Unlimited      perpetual
+Failover                          : Active/Active  perpetual
+Encryption-DES                    : Enabled        perpetual
+Encryption-3DES-AES               : Enabled        perpetual
+Security Contexts                 : 2              perpetual
+GTP/GPRS                          : Disabled       perpetual
+AnyConnect Premium Peers          : 2              perpetual
+AnyConnect Essentials             : Disabled       perpetual
+Other VPN Peers                   : 750            perpetual
+Total VPN Peers                   : 750            perpetual
+Shared License                    : Disabled       perpetual
+AnyConnect for Mobile             : Disabled       perpetual
+AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Advanced Endpoint Assessment      : Disabled       perpetual
+UC Phone Proxy Sessions           : 2              perpetual
+Total UC Proxy Sessions           : 2              perpetual
+Botnet Traffic Filter             : Disabled       perpetual
+Intercompany Media Engine         : Disabled       perpetual
+Cluster                           : Disabled       perpetual
+
+This platform has an ASA 5520 VPN Plus license.
+
+Serial Number: JMX0929K05Y
+Running Permanent Activation Key: 0x391ff34e 0x4ce5edd3 0x689010fc 0x8c907820 0x4c26c9ac 
+Configuration register is 0x1
+Configuration has not been modified since last system restart.
+
+------------------ show disk0: controller ------------------
+
+
+Flash Model: TOSHIBA THNCF064MBA
+
+
+------------------ dir all-filesystems ------------------
+
+
+Directory of disk0:/
+
+111    -rwx  27703296     23:03:14 Apr 20 2017  asa917-16-k8.bin
+113    -rwx  27703296     18:13:54 Oct 18 2016  asa917-9-k8.bin
+114    drwx  4096         13:03:26 Aug 25 2006  sdesktop
+115    -rwx  87094        14:42:36 Nov 26 2009  Mark1.txt
+116    -rwx  88090        11:01:58 Feb 10 2010  10022010
+10     drwx  4096         05:16:50 Feb 12 2012  log
+18     drwx  4096         05:17:10 Feb 12 2012  crypto_archive
+117    -rwx  0            05:17:12 Feb 12 2012  nat_ident_migrate
+118    -rwx  180771       05:17:14 Feb 12 2012  7_2_1_0_startup_cfg.sav
+21     drwx  4096         05:18:26 Feb 12 2012  coredumpinfo
+119    -rwx  66215        05:18:26 Feb 12 2012  upgrade_startup_errors_201202120518.log
+19     drwx  4096         22:46:32 Jun 20 2013  snmp
+120    -rwx  28672        00:00:00 Jan 01 1980  FSCK0000.REC
+121    -rwx  4096         00:00:00 Jan 01 1980  FSCK0001.REC
+122    -rwx  100          14:13:00 Oct 10 2015  upgrade_startup_errors_201510101413.log
+123    -rwx  100          14:23:36 Oct 10 2015  upgrade_startup_errors_201510101423.log
+124    -rwx  100          14:30:06 Oct 10 2015  upgrade_startup_errors_201510101430.log
+
+62881792 bytes total (6365184 bytes free)
+
+------------------ show clock ------------------
+
+10:09:04.566 GMT Tue May 2 2017
+
+------------------ show crashinfo ------------------
+
+Saved crash: 00:00:00.000 GMT Thu Jan 1 1970
+
+
+------------------ show module ------------------
+
+
+Mod  Card Type                                    Model              Serial No. 
+---- -------------------------------------------- ------------------ -----------
+   0 ASA 5520 Adaptive Security Appliance         ASA5520            JMX0929K05Y
+   1 ASA 5500 Series Security Services Module-20  ASA-SSM-20         JAB092304U6
+
+Mod  MAC Address Range                 Hw Version   Fw Version   Sw Version     
+---- --------------------------------- ------------ ------------ ---------------
+   0 0012.808c.400c to 0012.808c.4010  1.0          1.0(10)0     9.1(7)16
+   1 0012.d948.edbf to 0012.d948.edbf  1.0          1.0(10)0     
+
+Mod  SSM Application Name           Status           SSM Application Version
+---- ------------------------------ ---------------- --------------------------
+
+Mod  Status             Data Plane Status     Compatibility
+---- ------------------ --------------------- -------------
+   0 Up Sys             Not Applicable        
+   1 Unresponsive       Not Applicable        
+
+
+------------------ show memory ------------------
+
+Free memory:        1703521304 bytes (79%)
+Used memory:         443962344 bytes (21%)
+-------------     ------------------
+Total memory:       2147483648 bytes (100%)
+
+------------------ show memory detail ------------------
+
+Free memory:                      1703521304 bytes (79%)
+Used memory:
+     Allocated memory in use:      125195240 bytes ( 6%)
+     Reserved memory:              318767104 bytes (15%)
+-----------------------------   ------------------
+Total memory:                     2147483648 bytes (100%)
+
+Least free memory:       1700375592 bytes (79%)
+Most used memory:         447108056 bytes (21%)
+
+MEMPOOL_DMA POOL STATS:
+
+Non-mmapped bytes allocated =     93114368
+Number of free chunks       =           46
+Number of mmapped regions   =            0
+Mmapped bytes allocated     =            0
+Max memory footprint        =     93114368
+Keepcost                    =     29390064
+Max contiguous free mem     =     29390064
+Allocated memory in use     =     63696152
+Free memory                 =     29418216
+
+----- fragmented memory statistics -----
+
+ fragment size       count          total
+    (bytes)                        (bytes)
+----------------  ----------  --------------
+           48             1             48**
+           72             3            216
+          112             1            112
+          192             1            192
+          240             1            240
+          256            29           7656
+          512             4           2632
+         1024             1           1280
+         2048             2           5328
+         4096             2          10336
+     29390064             1       29390064*
+
+*  - top most releasable chunk.
+** - contiguous memory on top of heap.
+
+
+----- allocated memory statistics -----
+
+ fragment size       count          total
+    (bytes)                        (bytes)
+----------------  ----------  --------------
+           48             2             96
+          152             2            304
+          168             3            504
+          232             1            232
+          248             1            248
+          256             3            768
+          384             2            768
+          512             5           2560
+         1024            67          68608
+         2048             5          10240
+         4096             2           8192
+         8192            11          90112
+        16384             1          16384
+        24576             2          49152
+        32768             7         229376
+        49152             1          49152
+        65536             4         262144
+        98304             2         196608
+       131072             5         655360
+       196608             5         983040
+       262144             9        2359296
+       393216             2         786432
+       524288             7        3670016
+       786432             1         786432
+      1048576             3        3145728
+      1572864            10       15728640
+      2097152             1        2097152
+      4194304             1        4194304
+      6291456             1        6291456
+     12582912             1       12582912
+
+MEMPOOL_GLOBAL_SHARED POOL STATS:
+
+Non-mmapped bytes allocated =   1828716544
+Number of free chunks       =          703
+Number of mmapped regions   =            0
+Mmapped bytes allocated     =            0
+Max memory footprint        =   1828716544
+Keepcost                    =   1699963224
+Max contiguous free mem     =   1699963224
+Allocated memory in use     =    125195240
+Free memory                 =   1703521304
+
+----- fragmented memory statistics -----
+
+ fragment size       count          total
+    (bytes)                        (bytes)
+----------------  ----------  --------------
+           16           183           2928
+           24           171           4104
+           32           123           3936
+           40           100           4000
+           48             1             48**
+           48            33           1584
+           56            17            952
+           64             2            128
+           72             8            576
+           80             1             80
+           88             3            264
+           96             2            192
+          104             1            104
+          112             1            112
+          120             3            360
+          128             2            256
+          136             4            544
+          144             6            864
+          160             1            160
+          168             4            672
+          176             3            528
+          184             2            368
+          208             2            416
+          224             1            224
+          240             1            240
+          248             1            248
+          256             2            568
+          768             1            768
+         3072             1           3328
+         6144             3          22288
+         8192             1           8312
+        16384             2          46184
+        24576             1          24800
+        32768             2          77896
+        65536             6         570280
+        98304             2         226784
+       131072             2         295768
+       196608             1         249784
+       524288             1         749352
+      1048576             1        1251864
+   1699963224             1     1699963224*
+
+*  - top most releasable chunk.
+** - contiguous memory on top of heap.
+
+
+----- allocated memory statistics -----
+
+ fragment size       count          total
+    (bytes)                        (bytes)
+----------------  ----------  --------------
+           48          1752          84096
+           56          3157         176792
+           64         13946         892544
+           72          2186         157392
+           80          4869         389520
+           88           443          38984
+           96           755          72480
+          104          2512         261248
+          112           164          18368
+          120           526          63120
+          128           495          63360
+          136            20           2720
+          144            36           5184
+          152          1310         199120
+          160           350          56000
+          168          9331        1567608
+          176           458          80608
+          184          1449         266616
+          192            41           7872
+          200            11           2200
+          208           255          53040
+          216             8           1728
+          224             6           1344
+          232           148          34336
+          240            36           8640
+          248            76          18848
+          256          1238         316928
+          384          8897        3416448
+          512          1493         764416
+          768           132         101376
+         1024           388         397312
+         1536           175         268800
+         2048           756        1548288
+         3072            87         267264
+         4096            84         344064
+         6144            22         135168
+         8192           263        2154496
+        12288            56         688128
+        16384           159        2605056
+        24576            32         786432
+        32768            63        2064384
+        49152            14         688128
+        65536           180       11796480
+        98304             5         491520
+       131072            19        2490368
+       196608            19        3735552
+       262144             5        1310720
+       393216             7        2752512
+       524288             8        4194304
+       786432             7        5505024
+      1048576             4        4194304
+      2097152             8       16777216
+      3145728             1        3145728
+      4194304             1        4194304
+     12582912             1       12582912
+
+Summary for all pools:
+
+Non-mmapped bytes allocated =   1921830912
+Number of free chunks       =          749
+Number of mmapped regions   =            0
+Mmapped bytes allocated     =            0
+Max memory footprint        =   1921830912
+Keepcost                    =   1729353288
+Allocated memory in use     =    188891392
+Free memory                 =   1732939520
+
+
+------------------ show conn count ------------------
+
+280 in use, 4310 most used
+
+------------------ show xlate count ------------------
+
+0 in use, 0 most used
+
+------------------ show vpn-sessiondb summary ------------------
+
+
+ No sessions to display.
+
+
+------------------ show blocks ------------------
+
+  SIZE    MAX    LOW    CNT
+     0    700    699    700
+     4    300    299    299
+    80    900    875    900
+   256   3636   3590   3631
+  1550   9886   9596   9601
+  2048   3100   3100   3100
+  2560   2052   2052   2052
+  4096    100     99    100
+  8192    100    100    100
+ 16384    152    152    152
+ 65536     16     16     16
+
+------------------ show blocks core ------------------
+
+CORE  LIMIT  ALLOC   HIGH    CNT       FAILED
+   0  24576    611    611    604            0
+
+------------------ show blocks queue history detail ------------------
+
+History buffer memory usage: 2832 bytes (default)
+History analysis time limit: 100 msec
+
+Please see 'show blocks exhaustion snapshot' for more information
+
+------------------ show blocks queue history core-local ------------------
+
+History buffer memory usage: 2832 bytes (default)
+History analysis time limit: 100 msec
+
+------------------ show interface ------------------
+
+Interface GigabitEthernet0/0 "", is administratively down, line protocol is down
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is off
+	Available but not configured via nameif
+	MAC address 0012.808c.400c, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 1 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops, 0 tx hangs
+	input queue (blocks free curr/low): hardware (255/255)
+	output queue (blocks free curr/low): hardware (255/255)
+  Control Point Interface States:
+	Interface number is 2
+	Interface config status is not active
+	Interface state is not active
+Interface GigabitEthernet0/1 "", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	Full-Duplex(Full-duplex), 1000 Mbps(1000 Mbps)
+	Input flow control is unsupported, output flow control is off
+	Available but not configured via nameif
+	MAC address 0012.808c.400d, MTU not set
+	IP address unassigned
+	110457581 packets input, 86530927220 bytes, 0 no buffer
+	Received 459251 broadcasts, 0 runts, 0 giants
+	111 input errors, 0 CRC, 0 frame, 111 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	128770337 packets output, 75536767511 bytes, 657 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 1 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops, 0 tx hangs
+	input queue (blocks free curr/low): hardware (255/230)
+	output queue (blocks free curr/low): hardware (255/0)
+  Control Point Interface States:
+	Interface number is 3
+	Interface config status is active
+	Interface state is active
+Interface GigabitEthernet0/1.1 "MOTL-MANAGEMENT", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 501
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.193, subnet mask 255.255.255.192
+  Traffic Statistics for "MOTL-MANAGEMENT":
+	2545791 packets input, 810537034 bytes
+	2411931 packets output, 769903127 bytes
+	51491 packets dropped
+  Control Point Interface States:
+	Interface number is 10
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan501 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.8 "EAI-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 508
+	Description: EAI Development
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.14, subnet mask 255.255.255.240
+  Traffic Statistics for "EAI-DEV":
+	8611189 packets input, 2597125038 bytes
+	11950236 packets output, 5340811768 bytes
+	137019 packets dropped
+  Control Point Interface States:
+	Interface number is 11
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan508 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.20 "GL520POD", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 520
+	Description: Chris Pinfold POD Servers
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.245.225, subnet mask 255.255.255.224
+  Traffic Statistics for "GL520POD":
+	0 packets input, 0 bytes
+	285229 packets output, 7986412 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 12
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan520 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.28 "MISC-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 528
+	Description: Miscellaneous Development Servers
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.62, subnet mask 255.255.255.224
+  Traffic Statistics for "MISC-DEV":
+	85373263 packets input, 77740281322 bytes
+	90453575 packets output, 49098830314 bytes
+	107969 packets dropped
+  Control Point Interface States:
+	Interface number is 13
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan528 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.31 "AKKADE-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 531
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.78, subnet mask 255.255.255.240
+  Traffic Statistics for "AKKADE-DEV":
+	0 packets input, 0 bytes
+	94576 packets output, 2648128 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 14
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan531 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.48 "PARITY-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 548
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.110, subnet mask 255.255.255.240
+  Traffic Statistics for "PARITY-DEV":
+	1906260 packets input, 465000330 bytes
+	3006118 packets output, 1788566786 bytes
+	55249 packets dropped
+  Control Point Interface States:
+	Interface number is 15
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan548 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.50 "WIPRODEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 550
+	Description: WiPro Development
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.245.97, subnet mask 255.255.255.224
+  Traffic Statistics for "WIPRODEV":
+	0 packets input, 0 bytes
+	3781 packets output, 105868 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 16
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan550 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.55 "HQIT-CLIENT-LAN", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 555
+	Description: Office Extend Clients
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.179.7.254, subnet mask 255.255.255.128
+  Traffic Statistics for "HQIT-CLIENT-LAN":
+	151 packets input, 6687 bytes
+	50588 packets output, 3426249 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 17
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan555 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.56 "GLOBALMOBILE-TRANSIT", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 552
+	Description: Laurence Dale 24/10/11 Global Mobile transit VLAN
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.245.81, subnet mask 255.255.255.240
+  Traffic Statistics for "GLOBALMOBILE-TRANSIT":
+	367601 packets input, 17701118 bytes
+	3111 packets output, 218865 bytes
+	365464 packets dropped
+  Control Point Interface States:
+	Interface number is 18
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan552 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.57 "GLOBALIPT-CLIENTS", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 553
+	Description: Laurence Dale 24/10/11 Global IPT Clients
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.179.7.126, subnet mask 255.255.255.128
+  Traffic Statistics for "GLOBALIPT-CLIENTS":
+	0 packets input, 0 bytes
+	1 packets output, 28 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 19
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan553 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.68 "SBS-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 568
+	Description: SBS Development Network - Contact Marc Timperley
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.158, subnet mask 255.255.255.240
+  Traffic Statistics for "SBS-DEV":
+	0 packets input, 0 bytes
+	45706 packets output, 1279768 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 20
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan568 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.69 "HCL-DELL-2012", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 569
+	Description: HCL Dell Win2012 Development Servers
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.245.161, subnet mask 255.255.255.224
+  Traffic Statistics for "HCL-DELL-2012":
+	0 packets input, 0 bytes
+	46036 packets output, 1289008 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 21
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan569 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.70 "GL570-ITE-FIXED", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 570
+	Description: GL570-ITE-FIXED
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.246.1, subnet mask 255.255.255.192
+  Traffic Statistics for "GL570-ITE-FIXED":
+	1693484 packets input, 137329259 bytes
+	4664480 packets output, 5241364707 bytes
+	453458 packets dropped
+  Control Point Interface States:
+	Interface number is 22
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan570 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.73 "GL573-ITE-BATGEN", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 573
+	Description: GL573-ITE-BATGEN
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.246.65, subnet mask 255.255.255.192
+  Traffic Statistics for "GL573-ITE-BATGEN":
+	8538571 packets input, 1954363827 bytes
+	13012791 packets output, 8929634634 bytes
+	16645 packets dropped
+  Control Point Interface States:
+	Interface number is 23
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan573 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.75 "GL575-ITE-OUTSIDE-DMZ", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 575
+	Description: GL575-ITE-OUTSIDE-DMZ
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 172.30.10.1, subnet mask 255.255.255.248
+  Traffic Statistics for "GL575-ITE-OUTSIDE-DMZ":
+	0 packets input, 0 bytes
+	1 packets output, 28 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 24
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan575 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.78 "ONEWEB", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 578
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.247.174, subnet mask 255.255.255.240
+  Traffic Statistics for "ONEWEB":
+	668809 packets input, 159926300 bytes
+	1391333 packets output, 1286041902 bytes
+	58688 packets dropped
+  Control Point Interface States:
+	Interface number is 25
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan578 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.80 "GL580-ITE-DHCP", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 580
+	Description: GL580-ITE-DHCP
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.246.129, subnet mask 255.255.255.128
+  Traffic Statistics for "GL580-ITE-DHCP":
+	0 packets input, 0 bytes
+	412471 packets output, 11549188 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 26
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan580 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.85 "GL585-ITE-INSIDE-DMZ", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 585
+	Description: GL585-ITE-INSIDE-DMZ
+	MAC address 0012.808c.400d, MTU 1500
+	IP address unassigned
+  Traffic Statistics for "GL585-ITE-INSIDE-DMZ":
+	0 packets input, 0 bytes
+	0 packets output, 0 bytes
+	0 packets dropped
+  Control Point Interface States:
+	Interface number is 27
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan585 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/1.90 "WIFI-DEV", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	VLAN identifier 590
+	Description: FW interface for WiFi Development
+	MAC address 0012.808c.400d, MTU 1500
+	IP address 10.176.245.142, subnet mask 255.255.255.240
+  Traffic Statistics for "WIFI-DEV":
+	750061 packets input, 135551395 bytes
+	939031 packets output, 124626871 bytes
+	61566 packets dropped
+  Control Point Interface States:
+	Interface number is 28
+	Interface config status is active
+	Interface state is active
+  Control Point Vlan590 States:
+	Interface vlan config status is active
+	Interface vlan state is UP
+Interface GigabitEthernet0/2 "Corporate", is up, line protocol is up
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	Auto-Duplex(Full-duplex), Auto-Speed(1000 Mbps)
+	Input flow control is unsupported, output flow control is off
+	Description: BAT SF LAN
+	MAC address 0012.808c.400e, MTU 1500
+	IP address 10.176.194.170, subnet mask 255.255.255.240
+	136079430 packets input, 75835460892 bytes, 0 no buffer
+	Received 43053 broadcasts, 0 runts, 0 giants
+	161 input errors, 0 CRC, 0 frame, 161 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	141156456 packets output, 96038396523 bytes, 81324 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 1 interface resets
+	0 late collisions, 0 deferred
+	211 input reset drops, 0 output reset drops, 0 tx hangs
+	input queue (blocks free curr/low): hardware (255/230)
+	output queue (blocks free curr/low): hardware (255/0)
+  Traffic Statistics for "Corporate":
+	136079010 packets input, 73221352847 bytes
+	141237780 packets output, 93534665803 bytes
+	111839 packets dropped
+      1 minute input rate 99 pkts/sec,  53979 bytes/sec
+      1 minute output rate 90 pkts/sec,  73836 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 694 pkts/sec,  202582 bytes/sec
+      5 minute output rate 668 pkts/sec,  222962 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 4
+	Interface config status is active
+	Interface state is active
+Interface GigabitEthernet0/3 "", is administratively down, line protocol is down
+  Hardware is i82546GB rev03, BW 1000 Mbps, DLY 10 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is off
+	Available but not configured via nameif
+	MAC address 0012.808c.400f, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 1 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops, 0 tx hangs
+	input queue (blocks free curr/low): hardware (255/255)
+	output queue (blocks free curr/low): hardware (255/255)
+  Control Point Interface States:
+	Interface number is 5
+	Interface config status is not active
+	Interface state is not active
+Interface Internal-Control0/0 "cplane", is up, line protocol is up
+  Hardware is i82557, BW 100 Mbps, DLY 100 usec
+	(Full-duplex), (100 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	MAC address 0000.0001.0001, MTU 1500
+	IP address 127.0.1.1, subnet mask 255.255.0.0
+	1686181 packets input, 296907942 bytes, 0 no buffer
+	Received 29489 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	1657651 packets output, 115976878 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 babbles, 0 late collisions, 0 deferred
+	0 lost carrier, 0 no carrier
+	0 input reset drops, 0 output reset drops
+	input queue (curr/max packets): hardware (0/1) software (0/20)
+	output queue (curr/max packets): hardware (0/11) software (0/1)
+  Traffic Statistics for "cplane":
+	0 packets input, 0 bytes
+	0 packets output, 0 bytes
+	0 packets dropped
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 8
+	Interface config status is active
+	Interface state is active
+Interface Internal-Data0/0 "", is up, line protocol is up
+  Hardware is i82547GI rev00, BW 1000 Mbps, DLY 10 usec
+	(Full-duplex), (1000 Mbps)
+	Input flow control is unsupported, output flow control is off
+	MAC address 0000.0001.0002, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	input queue (blocks free curr/low): hardware (255/255)
+	output queue (blocks free curr/low): hardware (255/255)
+  Control Point Interface States:
+	Interface number is 7
+	Interface config status is active
+	Interface state is active
+Interface Management0/0 "Internet", is up, line protocol is up
+  Hardware is i82557, BW 100 Mbps, DLY 100 usec
+	Full-Duplex(Full-duplex), 100 Mbps(100 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	Description: !!INTERNET CONNECTIVITY!! Not Management
+	MAC address 0012.808c.4010, MTU 1500
+	IP address 62.7.71.228, subnet mask 255.255.255.240
+	198193 packets input, 12724183 bytes, 0 no buffer
+	Received 173975 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 pause input, 0 resume input
+	0 L2 decode drops
+	170 packets output, 11252 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 babbles, 0 late collisions, 0 deferred
+	0 lost carrier, 0 no carrier
+	0 input reset drops, 0 output reset drops
+	input queue (curr/max packets): hardware (0/1) software (0/6)
+	output queue (curr/max packets): hardware (0/1) software (0/1)
+  Traffic Statistics for "Internet":
+	198261 packets input, 9841757 bytes
+	170 packets output, 6090 bytes
+	24117 packets dropped
+      1 minute input rate 0 pkts/sec,  8 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  11 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 6
+	Interface config status is active
+	Interface state is active
+
+------------------ show cpu usage ------------------
+
+CPU utilization for 5 seconds = 8%; 1 minute: 2%; 5 minutes: 2%
+
+------------------ show cpu detailed ------------------
+
+
+Break down of per-core data path versus control point cpu usage:
+Core         5 sec            1 min            5 min
+Core 0       8.0 (0.0 + 8.0)  1.6 (0.0 + 1.6)  2.0 (0.0 + 2.0)
+
+Current control point elapsed versus the maximum control point elapsed for:
+      5 seconds = 100.0%; 1 minute: 99.8%; 5 minutes: 100.0%
+
+
+CPU utilization of external processes for:
+      5 seconds = 0.0%; 1 minute: 0.0%; 5 minutes: 0.0%
+
+
+Total CPU utilization for:
+      5 seconds = 8.0%; 1 minute: 1.6%; 5 minutes: 2.1%
+
+
+------------------ show cpu hogging process ------------------
+
+
+Process:      Dispatch Unit, PROC_PC_TOTAL: 2, MAXHOG: 11, LASTHOG: 3
+LASTHOG At:   13:24:46 GMT Apr 26 2017
+PC:           0x082a2a18 (suspend)
+
+Process:      Dispatch Unit, NUMHOG: 2, MAXHOG: 11, LASTHOG: 3
+LASTHOG At:   13:24:46 GMT Apr 26 2017
+PC:           0x082a2a18 (suspend)
+Call stack:   0x082a2a18  0x0806a2ac
+
+Process:      snmp, PROC_PC_TOTAL: 21, MAXHOG: 6, LASTHOG: 5
+LASTHOG At:   08:31:06 GMT May 2 2017
+PC:           0x091b5fe9 (suspend)
+
+Process:      snmp, NUMHOG: 21, MAXHOG: 6, LASTHOG: 5
+LASTHOG At:   08:31:06 GMT May 2 2017
+PC:           0x091b5fe9 (suspend)
+Call stack:   0x091b5fe9  0x090682bf  0x09042fa5  0x09040f74  0x0806a2ac
+
+Process:      snmp, PROC_PC_TOTAL: 1555, MAXHOG: 6, LASTHOG: 5
+LASTHOG At:   10:00:21 GMT May 2 2017
+PC:           0x0906f9ce (suspend)
+
+Process:      snmp, NUMHOG: 1555, MAXHOG: 6, LASTHOG: 5
+LASTHOG At:   10:00:21 GMT May 2 2017
+PC:           0x0906f9ce (suspend)
+Call stack:   0x0906f9ce  0x0906e990  0x0906b8ee  0x0906e526  0x0904317b  0x09040f74  0x0806a2ac
+            
+
+Process:      Dispatch Unit, PROC_PC_TOTAL: 6025, MAXHOG: 144, LASTHOG: 11
+LASTHOG At:   10:05:44 GMT May 2 2017
+PC:           0x082a2c6c (suspend)
+
+Process:      Dispatch Unit, NUMHOG: 6025, MAXHOG: 144, LASTHOG: 11
+LASTHOG At:   10:05:44 GMT May 2 2017
+PC:           0x082a2c6c (suspend)
+Call stack:   0x082a2c6c  0x0806a2ac
+
+Process:      ssh_init, PROC_PC_TOTAL: 7, MAXHOG: 10, LASTHOG: 9
+LASTHOG At:   10:08:55 GMT May 2 2017
+PC:           0x0806c35e (suspend)
+
+Process:      ssh_init, NUMHOG: 7, MAXHOG: 10, LASTHOG: 9
+LASTHOG At:   10:08:55 GMT May 2 2017
+PC:           0x0806c35e (suspend)
+Call stack:   0x0806c35e  0x08197fbb  0x0987756b  0x0987b60a  0x0986d8ae  0x0986dad7  0x098925af
+              0x098a15f7  0x0989609a  0x08190ac0  0x081589f2  0x091272ab  0x091229f6  0x091214fe
+
+Process:      ssh, PROC_PC_TOTAL: 1, MAXHOG: 6, LASTHOG: 6
+LASTHOG At:   10:09:04 GMT May 2 2017
+PC:           0x09111b5d (suspend)
+
+Process:      ssh, NUMHOG: 1, MAXHOG: 6, LASTHOG: 6
+LASTHOG At:   10:09:04 GMT May 2 2017
+PC:           0x09111b5d (suspend)
+Call stack:   0x09111b5d  0x09123b10  0x0912618e  0x0911691b  0x09116ba8  0x0911860d  0x08c8a3ff
+              0x0992e5b8  0x0990bf75  0x0990c667  0x081001af  0x08100353  0x08e08430  0x08cd2594
+
+CPU hog threshold (msec):  2.844
+Last cleared: None
+
+------------------ show process ------------------
+
+
+    PC       SP       STATE       Runtime    SBASE     Stack Process
+Msi 0x088972f4 0x6ef65ea4 0x0b652eb0        908 0x6ef61f98 15688/16384 WebVPN KCD Process
+Msi 0x093f74fd 0x71a6a91c 0x0b652eb0       3094 0x71a66a40 15640/16384 vpnlb_timer_thread
+Mwe 0x093f7192 0x6fbdc44c 0x0b5adca8          0 0x6fbd8580 15328/16384 vpnlb_thread
+Msi 0x093d936e 0x75da18f4 0x0b652eb0      24827 0x75d9da08 14152/16384 vpnfol_thread_unsent
+Msi 0x093d95e2 0x75d98d14 0x0b652eb0       4411 0x75d94e28 15656/16384 vpnfol_thread_timer
+Mwe 0x093d7642 0x75d9d294 0x0b5ad980          0 0x75d99418 15992/16384 vpnfol_thread_sync
+Mwe 0x093d0714 0x75d94714 0x0b5ad938          0 0x75d8c838 32472/32768 vpnfol_thread_msg
+Lwe 0x08d6b0a6 0x75e0c3f4 0x0b652eb0         74 0x75e08578 15560/16384 vPif_stats_cleaner
+Mwe 0x091dcd4d 0x702b4074 0x0b652eb0          2 0x6f0673a8 15072/16384 UserFromCert Thread
+Msi 0x08d22a8c 0x744b0d74 0x0b652eb0     100422 0x744ace58 14004/16384 update_cpu_usage
+Mwe 0x091dcd4d 0x75854b74 0x0b652eb0       3709 0x75781580 15024/16384 Unicorn Proxy Thread
+Mwe 0x091b6804 0x6f088694 0x0b57c910          0 0x6f0847b8 16072/16384 udp_timer
+Mwe 0x091b7481 0x7458ec04 0x0b652eb0       2391 0x7458ad88 15696/16384 udp_thread
+Lsi 0x08d078c9 0x6fbf4e2c 0x0b652eb0         63 0x6fbf0f10 15704/16384 uauth_urlb clean
+Mwe 0x090e6011 0x6fb7ce8c 0x0b56b0b0          0 0x6fb78fa0 15632/16384 Uauth_Proxy
+Mwe 0x09168c1d 0x6fb78c54 0x741f1668          4 0x6fb74e08 15448/16384 uauth
+Mwe 0x08288827 0x71f366a4 0x0aee47dc      10297 0x71f16968 120948/131072 tmatch compile thread
+Mwe 0x08398e85 0x6fc7c1cc 0x0b652eb0          0 0x6fc78360 15832/16384 TLS Proxy Inspector
+Mwe 0x0839935d 0x6fc803a4 0x0b652eb0          0 0x6fc7c4f8 15896/16384 TLS Proxy Handshake
+Mwe 0x083208b5 0x7577c1fc 0x0b652eb0        189 0x75778340 15624/16384 Timekeeper
+Mwe 0x09159a75 0x6fb999ac 0x0b652eb0          0 0x6fb95b00 15600/16384 Thread Logger
+Mwe 0x091704c4 0x74592914 0x0b6a798c        196 0x7458edb8 14924/16384 tcp_thread
+Mwe 0x09175b88 0x6f167154 0x0b574140         99 0x6f163288 15656/16384 tcp_slow
+Mwe 0x0916d117 0x6f163134 0x0b574140        184 0x6f15f258 15672/16384 tcp_fast
+Mwe 0x08f94766 0x753ed314 0x0b552034       2393 0x753e9438 11620/16384 tacplus_snd
+Mwe 0x0917de38 0x753e90bc 0x753e51f0        239 0x753e52a0 15336/16384 tacplus_get
+Mwe 0x09163f07 0x6fbbf944 0x0b5730c0          0 0x6fbbba58 15592/16384 syslogd
+Mwe 0x0915e9cd 0x6fb957d4 0x0b652eb0          0 0x6fb91968 15768/16384 Syslog Retry Thread
+Mwe 0x081f9bd5 0x6f0a354c 0x0b652eb0          0 0x6f09f6c0 15624/16384 SXP CORE
+Msp 0x0913667f 0x6fb89384 0x0b652eb0        787 0x6fb85468 15704/16384 SSL
+Mwe 0x09118e4d 0x6f0e265c 0x0b652eb0          1 0x6f0de7b0 13712/16384 ssh/timer
+M*  0x09111b5d 0x68b3ff1c 0x0b653748        482 0x75f0d118 20512/32768 ssh
+Msi 0x09046ecc 0x7434d94c 0x0b652eb0         59 0x74349a30 15704/16384 snmpfo_timer_thread
+Mwe 0x090465c4 0x746f31ec 0x0b55fcec    2873391 0x746ef320 10532/16384 SNMP Notify Thread
+Mwe 0x091b5fe9 0x75ba7774 0x704d8a44     128417 0x75ba3be8 10904/16384 snmp
+Mwe 0x091661e4 0x6fb8d504 0x0b5736f4          0 0x6fb89638 15708/16384 SMTP
+Mwe 0x08ff2d8d 0x6fb6c964 0x0b652eb0        423 0x6fb64ad8 31952/32768 Session Manager
+Mwe 0x094da18d 0x6fbf0bb4 0x0b652eb0        271 0x6fbecd78 15200/16384 scansafe_poll
+Mwe 0x091dcd4d 0x7461b964 0x0b652eb0        119 0x7459ee78 26600/32768 rtcli async executor process
+Mwe 0x0993f4da 0x7459ec74 0x0b651644          0 0x7459ae48 15400/16384 rpc_server
+Mwe 0x080735dd 0x6f05bdfc 0x0b652eb0          0 0x6f053f40 32192/32768 Reload Control Thread
+Mwe 0x081f13c1 0x6f0ac844 0x0b652eb0          0 0x6f0a89a8 15488/16384 RBM CORE
+Mwe 0x090fd4fd 0x74413c1c 0x0b652eb0          0 0x7440fd70 15832/16384 RADIUS Proxy Time Keeper
+Mwe 0x090bcc23 0x7440f8e4 0x744628c0          5 0x7440bbd8 14752/16384 RADIUS Proxy Listener
+Mwe 0x090fddd4 0x7440b90c 0x0b570874          0 0x74407a40 16072/16384 RADIUS Proxy Event Daemon
+Mwe 0x08f6fb1d 0x6fb647ac 0x0b652eb0          0 0x6fb5c940 31776/32768 Quack process
+Mwe 0x08f6a57a 0x6fb41b9c 0x0b551038          0 0x6fb3dcb0 16104/16384 QoS Support Module
+Mwe 0x0937e541 0x71a668ac 0x0b5a27ac        698 0x71a62a10 16024/16384 ppp_timer_thread
+Lwe 0x08cda156 0x6f16b3dc 0x0b652eb0      12263 0x6f167560 12392/16384 pm_timer_thread
+Msi 0x08cf2c3e 0x6f99240c 0x0b652eb0       5462 0x6f98e520 14160/16384 PIX Garbage Collector
+Mwe 0x094d1d9c 0x6fbeca7c 0x0b5b3048          0 0x6fbe8be0 16024/16384 pci_nt_bridge
+Mwe 0x08b493f3 0x75c7edac 0x0b652eb0      12655 0x75c7af00 10836/16384 NTP
+Mwe 0x09187ff5 0x744b8fc4 0x0b652eb0        760 0x744b5188 13648/16384 npshim_thread
+Msi 0x08d22b54 0x744c52fc 0x0b652eb0          0 0x744c1520 13504/16384 NIC status poll
+Msi 0x089a5606 0x744cd73c 0x0b652eb0        310 0x744c9850 15656/16384 netfs_vnode_reclaim
+Mwe 0x091dcd4d 0x6fc9ce44 0x0b652eb0          0 0x6f16b720 15264/16384 netfs_thread_init
+Mwe 0x089a52f4 0x6fd55a54 0x0af6aee4          0 0x6fd51b78 15696/16384 netfs_mount_handler
+Mwe 0x0935eea5 0x7453caa4 0x0b6a7828          0 0x74534bb8 32456/32768 lu_rx
+Lwe 0x0935eef4 0x74540c4c 0x0b93d7a8          0 0x7453cd50 16120/16384 lu_dynamic_sync
+Mwe 0x0935efec 0x744acb4c 0x0b93d804        149 0x744a8cc0 15632/16384 lu_ctl
+Mwe 0x0915fc4c 0x6fb9165c 0x0b572a18     377524 0x6fb8d7d0 12944/16384 Logger
+Mwe 0x0917de38 0x75c1f764 0x75c1b998          0 0x75c1ba48 15536/16384 listen/telnet
+Mwe 0x0917de38 0x75c2521c 0x75c21450          0 0x75c21500 14764/16384 listen/ssh
+Mwe 0x08f086ec 0x6ef71054 0x0b4e9fa0          0 0x6ef6d188 16072/16384 lina_int
+Mwe 0x08897fe6 0x6f156ba4 0x0b6b0440        111 0x6f152cd8 11904/16384 Lic TMR
+Mwe 0x08897da5 0x6fb5c684 0x0af67220        354 0x6fb587a8 16040/16384 Lic HA Cluster
+Mwe 0x09396165 0x6f17782c 0x0b652eb0          0 0x6f173990 15816/16384 L2TP mgmt daemon
+Mwe 0x093937e5 0x6f1737fc 0x0b652eb0          0 0x6f16f960 15816/16384 L2TP data daemon
+Mwe 0x0816dcba 0x71e64644 0x71e60790          2 0x71e607c8 15712/16384 IPsec message handler
+Mwe 0x087c576e 0x7458ac14 0x0b6a790c      12271 0x74582d58 31864/32768 IP Thread
+Mwe 0x08b72ca2 0x73fe912c 0x0b652eb0       2170 0x73fe5280 14176/16384 IP Background
+Mwe 0x08cce4da 0x6f9a86ec 0x0b4d3084          0 0x6f9a4800 16104/16384 IP Address Assign
+Mwe 0x087b6045 0x6fbe475c 0x0b652eb0          0 0x6fbe08b0 15832/16384 Integrity Fw Timer Thread
+Mwe 0x087b9b74 0x74417d14 0x0b6a7268          0 0x74413f08 15264/16384 Integrity FW Task
+Mwe 0x0872fb6c 0x743e7cf4 0x0b652eb0        981 0x743e3e48 15624/16384 IKEv2 DPD Client Process
+Mwe 0x087306a1 0x6f14cc5c 0x0b652eb0        563 0x6f149110 12836/16384 IKEv2 Daemon
+Mwe 0x08683c85 0x6fb74acc 0x0b652eb0          0 0x6fb70ca0 15704/16384 IKE Timekeeper
+Mwe 0x08681f3d 0x6f152974 0x0b652eb0          0 0x6f14eac8 15792/16384 IKE Receiver
+Mwe 0x086716ab 0x743e39d4 0x0af62d30          0 0x743dbe18 30040/32768 IKE Daemon
+Mwe 0x086499bd 0x6fb70b1c 0x0b652eb0          0 0x6fb6cc70 15832/16384 IKE Common thread
+Mwe 0x085cab8b 0x6f10597c 0x0b652eb0          0 0x6f0fdad0 32216/32768 idfw_service
+Mwe 0x085be6a5 0x6f0fd7d4 0x0b652eb0          0 0x6f0f5938 31680/32768 idfw_proc
+Mwe 0x085d6ba5 0x6f109ad4 0x0b652eb0          0 0x6f105c68 15524/16384 idfw_adagent
+Mwe 0x0859ac3e 0x6fb54224 0x0b6a78c8       2895 0x6fb50478 13764/16384 icmp_thread
+Mwe 0x08fa1e4d 0x73f83a7c 0x0b652eb0          0 0x73f7fbc0 15848/16384 ICMP event handler
+Msi 0x08d22354 0x744b4efc 0x0b652eb0          8 0x744b0ff0 15688/16384 health_check
+Mwe 0x08546aef 0x7452b714 0x0b652eb0          0 0x745278f8 15688/16384 ha_trans_data_tx
+Mwe 0x08546aef 0x7450554c 0x0b652eb0          0 0x74501730 15688/16384 ha_trans_ctl_tx
+Mwe 0x08527042 0x744e0614 0x0b69bd04          0 0x744dc7d8 15928/16384 fover_tx_2
+Mwe 0x08527042 0x744dc47c 0x0b69bcfc          0 0x744d8640 15928/16384 fover_tx
+Msi 0x0852bb7c 0x744a89f4 0x0b652eb0       2582 0x744a4b28 14528/16384 fover_thread
+Mwe 0x0852547c 0x744d8334 0x0b694d20          0 0x744d44a8 16008/16384 fover_rx
+Mwe 0x08530934 0x744e87c4 0x0b69bd18          0 0x744e4b08 15544/16384 fover_rep
+Mwe 0x0852534c 0x744f084c 0x0b69bd20       1843 0x744e8ca0 31652/32768 fover_parse
+Mwe 0x085170ec 0x744e46fc 0x0b6a7888          0 0x744e0970 15720/16384 fover_ip
+Mwe 0x08501790 0x744f8e6c 0x0b69c38c        539 0x744f4fd0 16024/16384 fover_ifc_test
+Mwe 0x08505806 0x744fd004 0x0b652eb0          0 0x744f9168 15816/16384 fover_health_monitoring_thread
+Mwe 0x0853cf6d 0x7453394c 0x0b652eb0          0 0x7452ba90 32040/32768 fover_FSM_thread
+Mwe 0x0850557d 0x744f4ce4 0x0b652eb0          0 0x744f0e38 15832/16384 fover_fail_check
+Mwe 0x0832b7da 0x757772ac 0x0b652eb0        430 0x7576f830 30576/32768 emweb/https
+Msi 0x09011bec 0x6fd00d54 0x0b652eb0       1822 0x6fcfce48 15688/16384 emweb/cifs_timer
+Mwe 0x090bcc23 0x74c30164 0x742d28e0          5 0x74c2c468 15304/16384 EAPoUDP-sock
+Mwe 0x082f13ad 0x74c34014 0x0b652eb0          0 0x74c30498 15016/16384 EAPoUDP
+Mwe 0x0931debd 0x73f87c04 0x0b652eb0          0 0x73f83d58 15832/16384 Dynamic Filter VC Housekeeper
+Mrd 0x082a2979 0x6ef4a03c 0x0b653748    4608659 0x6ef2a1e0 121888/131072 Dispatch Unit
+Msi 0x082eb89c 0x75c5e45c 0x0b652eb0      12796 0x75c5a5a0 13952/16384 DHCPRA Monitor
+Mwe 0x082c5901 0x75c5a2c4 0x0b652eb0       6323 0x75c56408 15296/16384 DHCPD Timer
+Mwe 0x082c93a1 0x75c68524 0x0b652eb0      22078 0x75c646f8 10612/16384 dhcp_daemon
+Msi 0x082ec8ba 0x6fb501ac 0x0b652eb0       2456 0x6fb4c2e0 14256/16384 DHCP Network Scope Monitor
+Lwe 0x082a0d2c 0x6f0da35c 0x0b6666a0          0 0x6f0d6480 15616/16384 dbgtrace
+Mwe 0x081e966d 0x6f0c99a4 0x0b652eb0          0 0x6f0c5ae8 15672/16384 cts_timer_task
+Mwe 0x081e81bc 0x6f0c56cc 0x0b660888        177 0x6f0bd950 31704/32768 cts_task
+Msi 0x08187064 0x71e68644 0x0b652eb0      93908 0x71e649a8 13560/16384 CTM message handler
+Mwe 0x081809d5 0x6f09ce5c 0x0b652eb0          0 0x6f098fb0 15832/16384 CTM Daemon
+Mwe 0x0813817d 0x6f0f2e44 0x0b652eb0          0 0x6f0eef98 15832/16384 CTCP Timer process
+Mwe 0x08e6ef45 0x7432270c 0x0b652eb0          0 0x7431e840 15928/16384 Crypto PKI RECV
+Mwe 0x08e705d3 0x74315bdc 0x0b652eb0          0 0x74311d30 15832/16384 Crypto CA
+Mwe 0x08121cf9 0x74596cb4 0x0aedaa50      38676 0x74592de8 14520/16384 cppoll
+Mrd 0x083a5021 0x7445c894 0x0b653748          0 0x744589e8 14536/16384 CP Threat-Detection Processing
+Mwe 0x091735fa 0x7459aae4 0x74354650          0 0x74596e18 15056/16384 CP Server Process
+Mwe 0x080c408d 0x6f080334 0x0b652eb0        112 0x6f07c488 15608/16384 CMGR Timer Process
+Mwe 0x080c1a1c 0x6f07c1cc 0x0b655514       2346 0x6f0742f0 27928/32768 CMGR Server Process
+Mwe 0x08228ad5 0x6f11d57c 0x0b652eb0          0 0x6f1196c0 15656/16384 cluster interface health monitor
+Mwe 0x08d8447a 0x6fb45d74 0x0b4d4008          0 0x6fb41e88 16104/16384 Client Update Task
+Mwe 0x082bcce4 0x744a3dbc 0x0a8334fc          1 0x74484990 124976/131072 ci/console
+Mwe 0x098baaf5 0x6f183d8c 0x0b652eb0          0 0x6f17ff10 15848/16384 Chunk Manager
+Lwe 0x09930ed5 0x6fb4aa34 0x0b652eb0     141934 0x6fb46b98 14440/16384 Checkheaps
+Mwe 0x084e81cd 0x6ef6ce3c 0x0b652eb0          0 0x6ef68ff0 15680/16384 CF OIR
+Mwe 0x08eb2378 0x74319c0c 0x0b652eb0          0 0x74315d60 15896/16384 CERT API
+Mwe 0x090bcc23 0x6f073584 0x74354198          5 0x6f06f8b8 15100/16384 Boot Message Proxy Process
+Lwe 0x080598a4 0x6ef1689c 0x0b652d88          0 0x6ef129b0 15760/16384 block_diag
+Msi 0x087cb9e8 0x6f0e6974 0x0b652eb0      31323 0x6f0e2a98 14072/16384 arp_timer
+Mwe 0x087d654e 0x6f111e34 0x0b6a72b0          0 0x6f10df98 16024/16384 arp_forward_thread
+Mwe 0x087ccfde 0x744c9594 0x0b6a72a0      28753 0x744c56b8 10964/16384 ARP Thread
+Mwe 0x091dcd4d 0x70269c34 0x0b652eb0          2 0x6f06b580 14512/16384 aaa_shim_thread
+Mwe 0x08088e09 0x6f066dac 0x0b65446c        496 0x6f063210 12864/16384 aaa
+Msi 0x085957d6 0x6f0eece4 0x0b652eb0          0 0x6f0eadc8 15672/16384 557statspoll
+Msi 0x08595404 0x6f0eab4c 0x0b652eb0       2867 0x6f0e6c30 15704/16384 557mcfix
+ -           -          -          -          0          -      -      DATAPATH-0-517
+ -           -          -          -  905373143          -      -      scheduler
+ -           -          -          -  913979571          -      -      total elapsed
+
+------------------ show kernel process ------------------
+
+ PID PPID PRI  NI       VSIZE      RSS                WCHAN STAT  RUNTIME    GTIME   CGTIME COMMAND
+   1    0  20   0     2084864      616           3708909432    S      168        0        0 init
+   2    0  15 - 5           0        0           3708961420    S        0        0        0 kthreadd
+   3    2  15 - 5           0        0           3708915808    S        0        0        0 ksoftirqd/0
+   4    2  15 - 5           0        0           3708951520    S        0        0        0 events/0
+   5    2  15 - 5           0        0           3708951520    S        0        0        0 khelper
+  50    2  15 - 5           0        0           3708951520    S        0        0        0 kblockd/0
+  53    2  15 - 5           0        0           3710000567    S        0        0        0 kseriod
+ 112    2  20   0           0        0           3709071126    S        0        0        0 pdflush
+ 113    2  20   0           0        0           3709071126    S        0        0        0 pdflush
+ 114    2  15 - 5           0        0           3709083995    S        0        0        0 kswapd0
+ 115    2  15 - 5           0        0           3708951520    S        0        0        0 aio/0
+ 116    2  15 - 5           0        0           3708951520    S        0        0        0 nfsiod
+ 227    2  15 - 5           0        0           3708951520    S        0        0        0 hid_compat
+ 228    2  15 - 5           0        0           3708951520    S        0        0        0 rpciod/0
+ 253    1  16 - 4     1789952      616           3709220183    S        2        0        0 udevd
+ 293  253  18 - 2     1785856      604           3709220183    S        0        0        0 udevd
+ 313  253  18 - 2     1785856      496           3709220183    S        0        0        0 udevd
+ 482    1  20   0     5206016     1604           4294967295    S        0        0        0 lwsmd
+ 484  482  20   0    16924672     3612           4294967295    S       51        0        0 lwregd
+ 509    1  20   0     2088960      516           3708909432    S        0        0        0 sh
+ 510  509  20   0    10186752      524           4294967295    S        0        0        0 lina_monitor
+ 512  510   0 -20  1997131776    73600           4294967295    S 91382307        0        0 lina
+
+------------------ show failover ------------------
+
+Failover Off 
+Failover unit Secondary
+Failover LAN Interface: not Configured
+Unit Poll frequency 1 seconds, holdtime 15 seconds
+Interface Poll frequency 5 seconds, holdtime 25 seconds
+Interface Policy 1
+Monitored Interfaces 2 of 160 maximum
+
+------------------ show failover history ------------------
+
+==========================================================================
+From State                 To State                   Reason
+==========================================================================
+20:21:14 GMT Apr 21 2017
+Not Detected               Disabled                   No Error
+
+==========================================================================
+
+------------------ show traffic ------------------
+
+MOTL-MANAGEMENT:
+	received (in 913672.900 secs):
+		2545791 packets	810537034 bytes
+		2 pkts/sec	3 bytes/sec
+	transmitted (in 913672.900 secs):
+		2411931 packets	769903127 bytes
+		2 pkts/sec	1 bytes/sec
+      1 minute input rate 2 pkts/sec,  654 bytes/sec
+      1 minute output rate 2 pkts/sec,  639 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 2 pkts/sec,  854 bytes/sec
+      5 minute output rate 2 pkts/sec,  826 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+EAI-DEV:
+	received (in 913672.920 secs):
+		8611190 packets	2597125098 bytes
+		0 pkts/sec	2001 bytes/sec
+	transmitted (in 913672.920 secs):
+		11950239 packets	5340811940 bytes
+		3 pkts/sec	5003 bytes/sec
+      1 minute input rate 3 pkts/sec,  915 bytes/sec
+      1 minute output rate 5 pkts/sec,  774 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 11 pkts/sec,  3062 bytes/sec
+      5 minute output rate 12 pkts/sec,  3913 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL520POD:
+	received (in 913672.930 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913672.930 secs):
+		285229 packets	7986412 bytes
+		0 pkts/sec	4 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  10 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  11 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+MISC-DEV:
+	received (in 913672.950 secs):
+		85373344 packets	77740342934 bytes
+		4 pkts/sec	85000 bytes/sec
+	transmitted (in 913672.950 secs):
+		90453680 packets	49098903044 bytes
+		0 pkts/sec	53004 bytes/sec
+      1 minute input rate 81 pkts/sec,  71256 bytes/sec
+      1 minute output rate 88 pkts/sec,  51669 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 636 pkts/sec,  215768 bytes/sec
+      5 minute output rate 660 pkts/sec,  191861 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+AKKADE-DEV:
+	received (in 913672.960 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913672.960 secs):
+		94576 packets	2648128 bytes
+		0 pkts/sec	2 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  9 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  2 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+PARITY-DEV:
+	received (in 913672.980 secs):
+		1906260 packets	465000330 bytes
+		2 pkts/sec	1 bytes/sec
+	transmitted (in 913672.980 secs):
+		3006118 packets	1788566786 bytes
+		3 pkts/sec	1003 bytes/sec
+      1 minute input rate 1 pkts/sec,  307 bytes/sec
+      1 minute output rate 2 pkts/sec,  336 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 1 pkts/sec,  352 bytes/sec
+      5 minute output rate 1 pkts/sec,  261 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+WIPRODEV:
+	received (in 913672.990 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913672.990 secs):
+		3781 packets	105868 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+HQIT-CLIENT-LAN:
+	received (in 913673.010 secs):
+		151 packets	6687 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.010 secs):
+		50588 packets	3426249 bytes
+		0 pkts/sec	3 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GLOBALMOBILE-TRANSIT:
+	received (in 913673.020 secs):
+		367601 packets	17701118 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.020 secs):
+		3111 packets	218865 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  19 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  19 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GLOBALIPT-CLIENTS:
+	received (in 913673.030 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.030 secs):
+		1 packets	28 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+SBS-DEV:
+	received (in 913673.050 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.050 secs):
+		45706 packets	1279768 bytes
+		0 pkts/sec	1 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  2 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  1 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+HCL-DELL-2012:
+	received (in 913673.060 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.060 secs):
+		46036 packets	1289008 bytes
+		0 pkts/sec	1 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  4 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  1 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL570-ITE-FIXED:
+	received (in 913673.080 secs):
+		1693484 packets	137329259 bytes
+		1 pkts/sec	4 bytes/sec
+	transmitted (in 913673.080 secs):
+		4664480 packets	5241364707 bytes
+		0 pkts/sec	5003 bytes/sec
+      1 minute input rate 0 pkts/sec,  77 bytes/sec
+      1 minute output rate 1 pkts/sec,  84 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  72 bytes/sec
+      5 minute output rate 0 pkts/sec,  83 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL573-ITE-BATGEN:
+	received (in 913673.100 secs):
+		8538573 packets	1954363956 bytes
+		4 pkts/sec	2002 bytes/sec
+	transmitted (in 913673.100 secs):
+		13012797 packets	8929634867 bytes
+		0 pkts/sec	9002 bytes/sec
+      1 minute input rate 1 pkts/sec,  425 bytes/sec
+      1 minute output rate 2 pkts/sec,  223 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 11 pkts/sec,  2439 bytes/sec
+      5 minute output rate 12 pkts/sec,  5252 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL575-ITE-OUTSIDE-DMZ:
+	received (in 913673.110 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.110 secs):
+		1 packets	28 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+ONEWEB:
+	received (in 913673.120 secs):
+		668809 packets	159926300 bytes
+		0 pkts/sec	1 bytes/sec
+	transmitted (in 913673.120 secs):
+		1391333 packets	1286041902 bytes
+		1 pkts/sec	1003 bytes/sec
+      1 minute input rate 0 pkts/sec,  114 bytes/sec
+      1 minute output rate 0 pkts/sec,  204 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  34 bytes/sec
+      5 minute output rate 0 pkts/sec,  71 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL580-ITE-DHCP:
+	received (in 913673.150 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.150 secs):
+		412471 packets	11549188 bytes
+		0 pkts/sec	3 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 1 pkts/sec,  35 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  12 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GL585-ITE-INSIDE-DMZ:
+	received (in 913673.170 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.170 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+WIFI-DEV:
+	received (in 913673.180 secs):
+		750061 packets	135551395 bytes
+		0 pkts/sec	2 bytes/sec
+	transmitted (in 913673.180 secs):
+		939031 packets	124626871 bytes
+		1 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  49 bytes/sec
+      1 minute output rate 0 pkts/sec,  67 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  146 bytes/sec
+      5 minute output rate 1 pkts/sec,  137 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Corporate:
+	received (in 913673.200 secs):
+		136079447 packets	73221441136 bytes
+		3 pkts/sec	80003 bytes/sec
+	transmitted (in 913673.200 secs):
+		141238552 packets	93534825454 bytes
+		4 pkts/sec	102000 bytes/sec
+      1 minute input rate 99 pkts/sec,  53979 bytes/sec
+      1 minute output rate 90 pkts/sec,  73836 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 694 pkts/sec,  202582 bytes/sec
+      5 minute output rate 668 pkts/sec,  222962 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Internet:
+	received (in 913673.210 secs):
+		198262 packets	9841803 bytes
+		0 pkts/sec	1 bytes/sec
+	transmitted (in 913673.210 secs):
+		170 packets	6090 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  8 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  11 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+
+----------------------------------------
+Aggregated Traffic on Physical Interface
+----------------------------------------
+GigabitEthernet0/0:
+	received (in 913673.230 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.230 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GigabitEthernet0/1:
+	received (in 913673.240 secs):
+		110457687 packets	86530999670 bytes
+		3 pkts/sec	94001 bytes/sec
+	transmitted (in 913673.240 secs):
+		128770476 packets	75536847880 bytes
+		4 pkts/sec	82001 bytes/sec
+      1 minute input rate 92 pkts/sec,  75946 bytes/sec
+      1 minute output rate 105 pkts/sec,  56561 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 665 pkts/sec,  237525 bytes/sec
+      5 minute output rate 693 pkts/sec,  217828 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GigabitEthernet0/2:
+	received (in 913673.260 secs):
+		136079895 packets	75835561281 bytes
+		3 pkts/sec	83000 bytes/sec
+	transmitted (in 913673.260 secs):
+		141157285 packets	96038578210 bytes
+		4 pkts/sec	105004 bytes/sec
+      1 minute input rate 99 pkts/sec,  55945 bytes/sec
+      1 minute output rate 90 pkts/sec,  75557 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 694 pkts/sec,  215331 bytes/sec
+      5 minute output rate 668 pkts/sec,  235115 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+GigabitEthernet0/3:
+	received (in 913673.270 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.270 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Internal-Control0/0:
+	received (in 913673.290 secs):
+		1686181 packets	296908120 bytes
+		1 pkts/sec	0 bytes/sec
+	transmitted (in 913673.290 secs):
+		1657651 packets	115976948 bytes
+		1 pkts/sec	0 bytes/sec
+      1 minute input rate 1 pkts/sec,  325 bytes/sec
+      1 minute output rate 1 pkts/sec,  127 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 1 pkts/sec,  324 bytes/sec
+      5 minute output rate 1 pkts/sec,  126 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Internal-Data0/0:
+	received (in 913673.310 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 913673.310 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Management0/0:
+	received (in 913673.310 secs):
+		198193 packets	12724243 bytes
+		0 pkts/sec	4 bytes/sec
+	transmitted (in 913673.310 secs):
+		170 packets	11252 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  11 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  14 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+
+------------------ show perfmon ------------------
+
+
+PERFMON STATS:                     Current      Average
+Xlates                                0/s          0/s
+Connections                           6/s          1/s
+TCP Conns                             4/s          3/s
+UDP Conns                             1/s          1/s
+URL Access                            0/s          0/s
+URL Server Req                        0/s          0/s
+TCP Fixup                             0/s          2/s
+TCP Intercept Established Conns       0/s          0/s
+TCP Intercept Attempts                0/s          0/s
+TCP Embryonic Conns Timeout           0/s          0/s
+HTTP Fixup                            0/s          2/s
+FTP Fixup                             0/s          0/s
+AAA Authen                            0/s          0/s
+AAA Author                            0/s          0/s
+AAA Account                           0/s          0/s
+
+VALID CONNS RATE in TCP INTERCEPT:    Current      Average
+                                       100.00%         100.00%
+
+------------------ show counters ------------------
+
+Protocol     Counter                                       Value   Context
+IP           IN_PKTS                                      939129   Summary
+IP           OUT_PKTS                                   26057699   Summary
+IP           TO_ARP                                       553687   Summary
+IP           TO_UDP                                       320057   Summary
+IP           TO_ICMP                                       50121   Summary
+IP           TO_TCP                                        15264   Summary
+TCP          IN_PKTS                                       15264   Summary
+TCP          OUT_PKTS                                      30528   Summary
+TCP          SYNS_RST                                      15264   Summary
+TCP          OUT_CLSD                                      30528   Summary
+TCP          HASH_ADD                                      15264   Summary
+TCP          SND_SYN                                       15264   Summary
+UDP          IN_PKTS                                      320057   Summary
+UDP          OUT_PKTS                                   23284946   Summary
+ICMP         IN_PKTS                                       50121   Summary
+ICMP         OUT_PKTS                                      49958   Summary
+ICMP         DROP_IGNORE                                       6   Summary
+ICMP         PORT_UNREACH                                    133   Summary
+SSLERR       BAD_AUTHENTICATION_TYPE                           9   Summary
+SSLERR       BAD_SIGNATURE                                    11   Summary
+SSLERR       UNKNOWN_ALERT_TYPE                               22   Summary
+SSLALERT     RX_CLOSE_NOTIFY                                   1   Summary
+SSLALERT     RX_OTHER_UNKNOWN                                 21   Summary
+SSLALERT     TX_CLOSE_NOTIFY                                5997   Summary
+SSLALERT     TX_ILLEGAL_PARAMETER                             22   Summary
+SSLALERT     TX_FATAL_ALERT                                   22   Summary
+SSLALERT     TX_WARNING_ALERT                               5997   Summary
+SSLDEV       NEW_CTX                                           1   Summary
+SSL_NP       OPEN_CONN                                         1   Summary
+SSL_NP       HANDSHAKE_START                                6020   Summary
+SSL_NP       HANDSHAKE_DONE                                 5997   Summary
+SSL_NP       DOWNSTREAM_CLOSE                              34736   Summary
+SSL_NP       DOWNSTREAM_CLOSE_NEXT                          6020   Summary
+SSL_NP       UPSTREAM_CLOSE                                 6020   Summary
+SSL_NP       UPSTREAM_CLOSE_NEXT                            6020   Summary
+SSL_NP       FREE_CONN                                      6020   Summary
+SSL_NP       NEW_CONN_SERVER                                6020   Summary
+SSL_NP       IN_PKTS_RX                                    24077   Summary
+SSL_NP       IN_PKTS_TX                                     5997   Summary
+SSL_NP       OUT_PKTS_RX                                   29985   Summary
+SSL_NP       OUT_PKTS_TX                                   48021   Summary
+SSL_NP       SESSIONS_CLEARED                               5972   Summary
+DHCP         RCV_Q_TIMER                                       1   Summary
+NPSHIM       CTX_ALLOC                                     12086   Summary
+NPSHIM       CTX_FREE                                      12080   Summary
+NPSHIM       WRITE_UNBLOCKED                                6483   Summary
+NPSHIM       QUEUED                                         6077   Summary
+NPSHIM       QUEUED_XMT                                     6072   Summary
+NPSHIM       QUEUED_DROP                                       5   Summary
+NPSHIM       PUT_REQUEST                                    9094   Summary
+NPSHIM       PUT_XMT                                        3017   Summary
+NPSHIM       READ_RECV                                      9493   Summary
+VPIF         BAD_VALUE                                         4   Summary
+VPIF         NOT_FOUND                                  55334641   Summary
+SSLENC       CONTEXT_CREATED                                6020   Summary
+SSLENC       CONTEXT_UPDATED                                6020   Summary
+SSLENC       CONTEXT_DESTROYED                              6020   Summary
+CRYPTO       DHE_HANDLE_ALLOCATED                          12040   Summary
+CRYPTO       DHE_HANDLE_FREED                              12040   Summary
+
+------------------ show asp drop ------------------
+
+
+Frame drop:
+  Flow is denied by configured rule (acl-drop)                           1045114
+  First TCP packet not SYN (tcp-not-syn)                                   63938
+  TCP failed 3 way handshake (tcp-3whs-failed)                              4996
+  TCP RST/FIN out of order (tcp-rstfin-ooo)                                98979
+  TCP SEQ in SYN/SYNACK invalid (tcp-seq-syn-diff)                             2
+  TCP packet SEQ past window (tcp-seq-past-win)                               42
+  TCP invalid ACK (tcp-invalid-ack)                                           18
+  TCP RST/SYN in window (tcp-rst-syn-in-win)                                  27
+  Slowpath security checks failed (sp-security-failed)                    229611
+  Expired flow (flow-expired)                                                  1
+  ICMP Inspect seq num not matched (inspect-icmp-seq-num-not-matched)         22
+  DNS Inspect invalid packet (inspect-dns-invalid-pak)                       347
+  DNS Inspect invalid domain label (inspect-dns-invalid-domain-label)        244
+  DNS Inspect packet too long (inspect-dns-pak-too-long)                     128
+  DNS Inspect id not matched (inspect-dns-id-not-matched)                    156
+  Interface is down (interface-down)                                          20
+  Dropped pending packets in a closed socket (np-socket-closed)             5997
+
+Last clearing: Never
+
+Flow drop:
+  Inspection failure (inspect-fail)                                        18076
+  SSL handshake failed (ssl-handshake-failed)                                 22
+
+Last clearing: Never
+
+------------------ show asp event dp-cp ------------------
+
+DP-CP EVENT QUEUE                  QUEUE-LEN  HIGH-WATER
+Punt Event Queue                           0           0
+Routing Event Queue                        0           0
+Identity-Traffic Event Queue               0           0
+General Event Queue                        0           0
+Syslog Event Queue                         0           0
+Non-Blocking Event Queue                   0           0
+Midpath High Event Queue                   0           0
+Midpath Norm Event Queue                   0           0
+Crypto Event Queue                         0           0
+SRTP Event Queue                           0           0
+HA Event Queue                             0           0
+Threat-Detection Event Queue               0           0
+SCP Event Queue                            0           0
+ARP Event Queue                            0           0
+IDFW Event Queue                           0           0
+CXSC Event Queue                           0           0
+
+EVENT-TYPE          ALLOC ALLOC-FAIL ENQUEUED ENQ-FAIL  RETIRED 15SEC-RATE
+
+------------------ show service-policy ------------------
+
+
+Global policy: 
+  Service-policy: asa_global_fw_policy
+    Class-map: inspection_default
+      Inspect: dns migrated_dns_map_1, packet 1394794, drop 875, reset-drop 0, v6-fail-close 0
+        message-length maximum 512, drop 0
+        dns-guard, count 617643
+        protocol-enforcement, drop 244
+        nat-rewrite, count 0
+        id-randomization, count 776462
+        id-mismatch count 30 duration 3, log 0
+      Inspect: h323 h225 _default_h323_map, packet 60, drop 0, reset-drop 0, v6-fail-close 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+        h245-tunnel-block drops 0 connection
+      Inspect: h323 ras _default_h323_map, packet 0, drop 0, reset-drop 0, v6-fail-close 0
+        h245-tunnel-block drops 0 connection
+      Inspect: netbios, packet 15558, drop 0, reset-drop 0, v6-fail-close 0
+      Inspect: rsh, packet 54, drop 0, reset-drop 0, v6-fail-close 0
+      Inspect: rtsp, packet 174, drop 0, reset-drop 0, v6-fail-close 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: skinny , packet 416, drop 37, reset-drop 0, v6-fail-close 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 1169
+      Inspect: sqlnet, packet 13737228, drop 0, reset-drop 0, v6-fail-close 0
+      Inspect: sunrpc, packet 2652, drop 0, reset-drop 0, v6-fail-close 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: tftp, packet 3773, drop 0, reset-drop 0, v6-fail-close 0
+      Inspect: sip , packet 65, drop 0, reset-drop 0, v6-fail-close 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: xdmcp, packet 107, drop 44, reset-drop 0, v6-fail-close 0
+      Inspect: icmp error, packet 152187, drop 0, reset-drop 0, v6-fail-close 0
+      Inspect: ftp, packet 67978, drop 0, reset-drop 4, v6-fail-close 0
+      Inspect: http, packet 6506379, drop 15, reset-drop 0, v6-fail-close 0
+      Inspect: esmtp _default_esmtp_map, packet 1906, drop 0, reset-drop 0, v6-fail-close 0
+        mask-banner, count 10
+        allow-tls, count 0
+        match cmd line length gt 512 
+          drop-connection log, packet 0
+        match cmd RCPT count gt 100 
+          drop-connection log, packet 0
+        match body line length gt 998 
+          log, packet 0
+        match header line length gt 998 
+          drop-connection log, packet 0
+        match sender-address length gt 320 
+          drop-connection log, packet 0
+        match MIME filename length gt 255 
+          drop-connection log, packet 0
+        match ehlo-reply-parameter others 
+          mask, packet 0
+    Class-map: class_ftp
+      Inspect: ftp, packet 0, drop 0, reset-drop 0, v6-fail-close 0
+
+------------------ show capture ------------------
+
+
+------------------ show resource usage counter all 1 ------------------
+
+Resource                 Current        Peak      Limit        Denied Context
+SSHServer                     1           1          5             0 System
+Syslogs[rate]                 0         226        N/A             0 System
+Conns                      281        4310     280000             0 System
+Hosts                      106       22208        N/A             0 System
+Conns[rate]                   6        8770        N/A             0 System
+Inspects[rate]                0         254        N/A             0 System
+Routes                       28          28  unlimited             0 System
+
+------------------ show mode ------------------
+
+Security context mode: single 
+
+------------------ show history ------------------
+
+  en
+  ter p 0
+
+------------------ show firewall ------------------
+
+Firewall mode: Router
+
+------------------ show running-config ------------------
+
+: Saved
+: 
+: Serial Number: JMX0929K05Y
+: Hardware:   ASA5520, 2048 MB RAM, CPU Pentium 4 Celeron 2000 MHz
+:
+ASA Version 9.1(7)16 
+!
+terminal width 511
+hostname BAT-WER-GBSF01-ASA-01
+domain-name gb.batgen.com
+enable password <removed>
+xlate per-session deny tcp any4 any4
+xlate per-session deny tcp any4 any6
+xlate per-session deny tcp any6 any4
+xlate per-session deny tcp any6 any6
+xlate per-session deny udp any4 any4 eq domain
+xlate per-session deny udp any4 any6 eq domain
+xlate per-session deny udp any6 any4 eq domain
+xlate per-session deny udp any6 any6 eq domain
+passwd <removed>
+names
+name 159.254.245.168 XLCREPO2 description EPO Server
+name 164.137.40.39 Z2DELS01 description EPO Server
+name 164.137.46.170 Z2DELF01 description Hamburg ePO Server
+name 164.137.40.52 HVW2KDWH1 description SOAP Server
+name 10.176.247.41 GBOHTF01
+name 164.137.160.55 DataWarehouseServer description Hamburg Unix Server
+name 10.176.247.45 GBOH112371 description Testin PC
+name 10.176.247.39 GBOHTF02-NEW description Altiris Package and Deployment Test Server
+name 10.176.209.136 GBOHLS10
+name 10.94.40.4 mail.batgen.com
+name 10.94.30.74 Z2T1DELGPLA01 description Replacement LDAP authentication server (replaces XLCRLS06)
+name 10.176.247.54 Z2T3GBGLVTA06 description Hubble Test
+name 10.94.10.112 UKCMDW1 description 255.255.255.255
+name 10.94.40.5 mail2.batgen.com description backup SMTP server in Frankfurt
+name 10.94.10.113 UKCMDW1P description -
+name 10.176.243.11 GBJRLS02 description Jersey GENA Apps Server
+name 164.137.46.209 HamEPOserver description Epo server
+name 10.176.192.201 GBSFLA23 description Southampton ePO Server
+name 10.94.21.131 DEFMLDWH02
+name 10.176.192.20 GBSFLF04 description Southampton GENA Apps Server
+name 10.176.192.24 Z2T3GBSFPLS01 description Southampton WSUS Server
+name 10.176.210.79 CISCOWORKS
+name 10.94.31.11 bat-t23-s01
+name 10.94.31.13 bat-t23-s03
+name 10.94.31.16 bat-t23-s06
+name 10.94.31.17 bat-t23-s07
+name 10.97.12.42 bat-t23-s32
+name 10.97.12.43 bat-t23-s33
+name 146.62.111.204 inblodg204.in.batgen.com
+name 10.97.11.36 GSDITAM
+name 10.94.31.12 bat-t23-s02
+name 10.94.31.14 bat-t23-s04
+name 10.94.31.15 bat-t23-s05
+name 10.97.12.41 bat-t23-s31
+name 10.176.247.42 Z2T3GBGLVTA02 description BATDOCS
+name 10.176.247.150 Z2T3GBGLVTA16-150 description SAP AccAD virtual address
+name 10.176.247.151 Z2T3GBGLVTA16-151 description SAP AccAD virtual address
+name 10.176.247.152 Z2T3GBGLVTA16-152 description SAP AccAD virtual address
+name 10.176.247.156 Z2T3GBGLVTA16 description SBS Development Server - Marc Timperley
+name 10.176.247.153 Z2T3GBGLVTA16-153 description SAP AccAD virtual address
+name 10.176.247.65 Z2T3GBGLVTA23 description OneSAP PoC - Brian Lane
+name 10.176.247.43 Z2T3GBGLVTA31 description Open Mobile Project - MEAP DME Connector
+name 10.94.21.68 AltirisNSZ2
+name 10.97.21.7 GSDITAM2 description Altris-2
+name 10.176.208.231 Z2T3GBGLPLS06
+name 10.176.192.33 Z2T3GBSFVLS07
+name 10.176.227.7 Z2T3GBGHVLS04
+name 10.176.192.4 GBSFLC02 description GBSFLC02 - Citrix Licence Server
+name 10.176.194.13 Z2T3GBSFVLM01 description Cisco WCS Wireless Management
+name 10.176.245.139 OfficeExtendWLC description Office Extend WLC Mgmt IP
+name 10.176.194.247 Z2T3GBSFPLN09
+name 10.176.247.102 Z2T3GBGLVTA04 description V3 Dev
+name 10.184.208.17 Z2T3GBGLPTC02 description TEST CUCM 8.6 SERVER
+name 10.176.245.141 z2t3gbglpln33
+name 10.176.247.101 z2t3gbglvta42 description BluePrint
+name 10.94.234.131 epo.batgen.com description Frankfurt epo server
+name 10.176.246.2 Z2T3GBEAVDS01
+!
+interface GigabitEthernet0/0
+ shutdown
+ no nameif
+ no security-level
+ no ip address
+!
+interface GigabitEthernet0/1
+ speed 1000
+ duplex full
+ no nameif
+ no security-level
+ no ip address
+!
+interface GigabitEthernet0/1.1
+ vlan 501
+ nameif MOTL-MANAGEMENT
+ security-level 99
+ ip address 10.176.247.193 255.255.255.192 
+!
+interface GigabitEthernet0/1.8
+ description EAI Development
+ vlan 508
+ nameif EAI-DEV
+ security-level 8
+ ip address 10.176.247.14 255.255.255.240 
+!
+interface GigabitEthernet0/1.20
+ description Chris Pinfold POD Servers
+ vlan 520
+ nameif GL520POD
+ security-level 99
+ ip address 10.176.245.225 255.255.255.224 
+!
+interface GigabitEthernet0/1.28
+ description Miscellaneous Development Servers
+ vlan 528
+ nameif MISC-DEV
+ security-level 28
+ ip address 10.176.247.62 255.255.255.224 
+!
+interface GigabitEthernet0/1.31
+ vlan 531
+ nameif AKKADE-DEV
+ security-level 31
+ ip address 10.176.247.78 255.255.255.240 
+!
+interface GigabitEthernet0/1.48
+ vlan 548
+ nameif PARITY-DEV
+ security-level 48
+ ip address 10.176.247.110 255.255.255.240 
+!
+interface GigabitEthernet0/1.50
+ description WiPro Development
+ vlan 550
+ nameif WIPRODEV
+ security-level 99
+ ip address 10.176.245.97 255.255.255.224 
+!
+interface GigabitEthernet0/1.55
+ description Office Extend Clients
+ vlan 555
+ nameif HQIT-CLIENT-LAN
+ security-level 55
+ ip address 10.179.7.254 255.255.255.128 
+!
+interface GigabitEthernet0/1.56
+ description Laurence Dale 24/10/11 Global Mobile transit VLAN
+ vlan 552
+ nameif GLOBALMOBILE-TRANSIT
+ security-level 56
+ ip address 10.176.245.81 255.255.255.240 
+!
+interface GigabitEthernet0/1.57
+ description Laurence Dale 24/10/11 Global IPT Clients
+ vlan 553
+ nameif GLOBALIPT-CLIENTS
+ security-level 57
+ ip address 10.179.7.126 255.255.255.128 
+!
+interface GigabitEthernet0/1.68
+ description SBS Development Network - Contact Marc Timperley
+ vlan 568
+ nameif SBS-DEV
+ security-level 68
+ ip address 10.176.247.158 255.255.255.240 
+!
+interface GigabitEthernet0/1.69
+ description HCL Dell Win2012 Development Servers
+ vlan 569
+ nameif HCL-DELL-2012
+ security-level 69
+ ip address 10.176.245.161 255.255.255.224 
+!
+interface GigabitEthernet0/1.70
+ description GL570-ITE-FIXED
+ vlan 570
+ nameif GL570-ITE-FIXED
+ security-level 70
+ ip address 10.176.246.1 255.255.255.192 
+!
+interface GigabitEthernet0/1.73
+ description GL573-ITE-BATGEN
+ vlan 573
+ nameif GL573-ITE-BATGEN
+ security-level 73
+ ip address 10.176.246.65 255.255.255.192 
+!
+interface GigabitEthernet0/1.75
+ description GL575-ITE-OUTSIDE-DMZ
+ vlan 575
+ nameif GL575-ITE-OUTSIDE-DMZ
+ security-level 1
+ ip address 172.30.10.1 255.255.255.248 
+!
+interface GigabitEthernet0/1.78
+ vlan 578
+ nameif ONEWEB
+ security-level 78
+ ip address 10.176.247.174 255.255.255.240 
+!
+interface GigabitEthernet0/1.80
+ description GL580-ITE-DHCP
+ vlan 580
+ nameif GL580-ITE-DHCP
+ security-level 80
+ ip address 10.176.246.129 255.255.255.128 
+!
+interface GigabitEthernet0/1.85
+ description GL585-ITE-INSIDE-DMZ
+ vlan 585
+ nameif GL585-ITE-INSIDE-DMZ
+ security-level 10
+ no ip address
+!
+interface GigabitEthernet0/1.90
+ description FW interface for WiFi Development
+ vlan 590
+ nameif WIFI-DEV
+ security-level 90
+ ip address 10.176.245.142 255.255.255.240 
+!
+interface GigabitEthernet0/2
+ description BAT SF LAN
+ nameif Corporate
+ security-level 100
+ ip address 10.176.194.170 255.255.255.240 
+!
+interface GigabitEthernet0/3
+ shutdown
+ no nameif
+ no security-level
+ no ip address
+!
+interface Management0/0
+ description !!INTERNET CONNECTIVITY!! Not Management
+ speed 100
+ duplex full
+ nameif Internet
+ security-level 0
+ ip address 62.7.71.228 255.255.255.240 
+!
+banner exec Access to these systems is restricted to authorised persons for authorised
+banner exec purposes only. You should ensure that before attempting to use the systems
+banner exec you are familiar with the IT Security policy and obtain authorisation and
+banner exec access permissions. Unauthorised or improper use may lead to personal
+banner exec liability and disciplinary action up to and including dismissal or prosecution.
+banner exec Use of all systems is routinely monitored and may be intercepted and recorded
+banner exec as described in the Company Policies.
+banner exec Access to these systems is restricted to authorised persons for authorized
+banner exec purposes only. You should ensure that before attempting to use the systems you
+banner exec are familiar with the IT Security policy and obtain authorisation and access
+banner exec permissions. Unauthorised or improper use may lead to personal liability and
+banner exec disciplinary action up to and including dismissal or prosecution.
+banner exec Use of all systems is routinely monitored and may be intercepted and recorded
+banner exec as described in the Company Policies.
+banner login Access to these systems is restricted to authorised persons for authorised
+banner login purposes only. You should ensure that before attempting to use the systems
+banner login you are familiar with the IT Security policy and obtain authorisation and
+banner login access permissions. Unauthorised or improper use may lead to personal
+banner login liability and disciplinary action up to and including dismissal or prosecution.
+banner login Use of all systems is routinely monitored and may be intercepted and recorded
+banner login as described in the Company Policies.
+banner login Access to these systems is restricted to authorised persons for authorized
+banner login purposes only. You should ensure that before attempting to use the systems you
+banner login are familiar with the IT Security policy and obtain authorisation and access
+banner login permissions. Unauthorised or improper use may lead to personal liability and
+banner login disciplinary action up to and including dismissal or prosecution.
+banner login Use of all systems is routinely monitored and may be intercepted and recorded
+banner login as described in the Company Policies.
+banner motd Access to these systems is restricted to authorised persons for authorised
+banner motd purposes only. You should ensure that before attempting to use the systems
+banner motd you are familiar with the IT Security policy and obtain authorisation and
+banner motd access permissions. Unauthorised or improper use may lead to personal
+banner motd liability and disciplinary action up to and including dismissal or prosecution.
+banner motd Use of all systems is routinely monitored and may be intercepted and recorded
+banner motd as described in the Company Policies.
+banner motd Access to these systems is restricted to authorised persons for authorized
+banner motd purposes only. You should ensure that before attempting to use the systems you
+banner motd are familiar with the IT Security policy and obtain authorisation and access
+banner motd permissions. Unauthorised or improper use may lead to personal liability and
+banner motd disciplinary action up to and including dismissal or prosecution.
+banner motd Use of all systems is routinely monitored and may be intercepted and recorded
+banner motd as described in the Company Policies.
+banner asdm Access to these systems is restricted to authorised persons for authorized
+banner asdm purposes only. You should ensure that before attempting to use the systems you
+banner asdm are familiar with the IT Security policy and obtain authorisation and access
+banner asdm permissions. Unauthorised or improper use may lead to personal liability and
+banner asdm disciplinary action up to and including dismissal or prosecution.
+banner asdm Use of all systems is routinely monitored and may be intercepted and recorded
+banner asdm as described in the Company Policies.
+boot system disk0:/asa917-16-k8.bin
+boot system disk0:/asa917-9-k8.bin
+no ftp mode passive
+clock timezone GMT 0
+dns server-group DefaultDNS
+ domain-name gb.batgen.com
+same-security-traffic permit intra-interface
+object network obj-10.176.245.192
+ subnet 10.176.245.192 255.255.255.224
+object network obj-10.176.245.128
+ subnet 10.176.245.128 255.255.255.248
+object network Z2T3GBSFPLS01
+ host 10.176.192.24
+ description Created during name migration
+object network Z2T3GBGLVTA02
+ host 10.176.247.42
+ description Created during name migration
+object network AltirisNSZ2
+ host 10.94.21.68
+ description Created during name migration
+object network GBOHLS10
+ host 10.176.209.136
+ description Created during name migration
+object network Z2T3GBGLVTA23
+ host 10.176.247.65
+ description Created during name migration
+object network mail.batgen.com
+ host 10.94.40.4
+ description Created during name migration
+object network Z2DELF01
+ host 164.137.46.170
+ description Created during name migration
+object network mail2.batgen.com
+ host 10.94.40.5
+ description Created during name migration
+object network epo.batgen.com
+ host 10.94.234.131
+ description Created during name migration
+object network CISCOWORKS
+ host 10.176.210.79
+ description Created during name migration
+object network UKCMDW1P
+ host 10.94.10.113
+ description Created during name migration
+object network UKCMDW1
+ host 10.94.10.112
+ description Created during name migration
+object network GBOHTF01
+ host 10.176.247.41
+ description Created during name migration
+object network GBOH112371
+ host 10.176.247.45
+ description Created during name migration
+object network GBOHTF02-NEW
+ host 10.176.247.39
+ description Created during name migration
+object network Z2T3GBGLVTA06
+ host 10.176.247.54
+ description Altiris Test Server - Graham Billings
+object network Z2T3GBGLVTA31
+ host 10.176.247.43
+ description Created during name migration
+object network Z2T3GBGLVTA04
+ host 10.176.247.102
+ description Created during name migration
+object network Z2T1DELGPLA01
+ host 10.94.30.74
+ description Created during name migration
+object network HVW2KDWH1
+ host 164.137.40.52
+ description Created during name migration
+object network DataWarehouseServer
+ host 164.137.160.55
+ description Created during name migration
+object network DEFMLDWH02
+ host 10.94.21.131
+ description Created during name migration
+object network Z2T3GBGLVTA16
+ host 10.176.247.156
+ description Created during name migration
+object network Z2T3GBGLVTA16-153
+ host 10.176.247.153
+ description Created during name migration
+object network Z2T3GBGLVTA16-150
+ host 10.176.247.150
+ description Created during name migration
+object network Z2T3GBGLVTA16-151
+ host 10.176.247.151
+ description Created during name migration
+object network Z2T3GBGLVTA16-152
+ host 10.176.247.152
+ description Created during name migration
+object network HamEPOserver
+ host 164.137.46.209
+ description Created during name migration
+object network Z2T3GBGLPLS06
+ host 10.176.208.231
+ description Created during name migration
+object network Z2T3GBSFVLM01
+ host 10.176.194.13
+ description Created during name migration
+object network Z2T3GBSFVLS07
+ host 10.176.192.33
+ description Created during name migration
+object network Z2T3GBSFPLN09
+ host 10.176.194.247
+ description Created during name migration
+object network z2t3gbglptc02
+ host 10.184.208.17
+ description TEST CUCM 8.6 SERVER
+object network z2t3gbsfvlm03
+ host 10.176.192.7
+ description Parity Linux Monitor Southampton
+object network z2t3gbglvta08
+ host 10.176.247.108
+ description Parity NPI Dev Server - Andrew Draper
+object network Z2T3GBGLVTW13
+ host 10.176.247.1
+ description Test Interact / Domino Server for Patrick Sundararajoo G.Clements 31/8/12
+object network Z2T3GBGLVTW14
+ host 10.176.247.2
+ description Test Interact / Domino Server for Patrick Sundararajoo G.Clements 31/8/12
+object network Z2T3GBGLVTW15
+ host 10.176.247.3
+ description Test Interact / Domino Server for Patrick Sundararajoo G.Clements 31/8/12
+object network Z2T3GBGLVTW16
+ host 10.176.247.166
+ description Replacement for Z2T3GBGLVTW05 OneWeb (Brian Berry)
+object network Z2T3GBGLVTA37
+ host 10.176.247.4
+ description Parity Test Server
+object network Z2T3GBGLVTA38
+ host 10.176.247.5
+ description Parity Test Server
+object network z2t3gbglpln33
+ host 10.176.245.141
+object network gbsfla23
+ host 10.176.192.201
+object network KL-TimeSyncServer300
+ host 10.97.12.75
+ description Global Timeserver
+object network Z2T3GBGLVTA12
+ host 10.176.247.12
+object network z2t3gbglvta42
+ host 10.176.247.101
+ description BluePrint
+object network DE-SMTP-Server
+ host 10.94.183.13
+ description DE-SMTP-Server
+object network wsus.z2.batgen.com
+ host 10.94.235.126
+object network GL570-ITE-FIXED
+ subnet 10.176.246.0 255.255.255.192
+object network GL580-ITE-DHCP
+ subnet 10.176.246.128 255.255.255.128
+object network z2t1defmvld007
+ host 10.94.235.17
+ description Frankfurt Database Server
+object network z2t1defmvtd002
+ host 10.94.234.18
+ description Frankfurt Database Server
+object network z2t1defmvsd007
+ host 10.94.234.92
+ description Frankfurt Database Server
+object network AZGLGBNEVLA20
+ host 10.16.8.118
+ description Parity Monitoring Server
+object-group network Corporate
+ description BAT Corporate Network Ranges
+ network-object 164.137.0.0 255.255.0.0
+ network-object 159.254.0.0 255.255.0.0
+ network-object 146.62.0.0 255.255.0.0
+ network-object 165.75.0.0 255.255.0.0
+ network-object 10.0.0.0 255.0.0.0
+object-group network Batdev_DC
+ description Access to Batdev DC's
+ network-object host Z2T3GBEAVDS01
+ network-object host 10.176.246.3
+ network-object host 10.176.246.4
+object-group network TLMO-Mgmt
+ network-object 10.176.247.192 255.255.255.192
+object-group service EPO-REPORTER tcp
+ description Bespoke Ports for EPO
+ port-object eq ftp-data
+ port-object eq ftp
+ port-object range 8090 8093
+ port-object eq www
+ port-object eq 8448
+ port-object eq 8081
+object-group network OH-Domain-Controllers
+ description Oxford House Domain Controllers
+ network-object host Z2T3GBGLPLS06
+ network-object host Z2T3GBSFVLS07
+ network-object host Z2T3GBGHVLS04
+ network-object host GBSFLC02
+object-group network EPO-SERVERS
+ network-object host XLCREPO2
+ network-object host Z2DELS01
+ network-object host Z2DELF01
+ network-object host HamEPOserver
+ network-object host GBSFLA23
+ network-object host 10.94.40.47
+ network-object host 10.94.21.207
+ network-object host 57.66.168.41
+ network-object host epo.batgen.com
+ network-object host 10.176.208.227
+ network-object host 10.176.192.45
+object-group service WSUS tcp
+ port-object eq https
+ port-object eq www
+object-group service AD-DOMAIN-UDP udp
+ port-object eq 389
+ port-object eq domain
+ port-object eq 88
+ port-object eq 445
+ port-object eq 4965
+ port-object eq ntp
+object-group service AD-DOMAIN-TCP tcp
+ port-object eq ldap
+ port-object eq 445
+ port-object eq domain
+ port-object eq 88
+ port-object eq 135
+ port-object range 1025 1026
+ port-object eq 137
+ port-object eq 4965
+ port-object eq 123
+ port-object range 49152 65535
+object-group service LEGATO-SERVER-BACKUP tcp
+ port-object range 10001 30000
+ port-object range 7937 9936
+object-group network SBS-Servers
+ network-object host Z2T3GBGLVTA16
+ network-object host Z2T3GBGLVTA16-153
+ network-object host Z2T3GBGLVTA16-150
+ network-object host Z2T3GBGLVTA16-151
+ network-object host Z2T3GBGLVTA16-152
+object-group service ORACLE-DB tcp
+ port-object range sqlnet 1522
+ port-object eq 445
+object-group service SQLNet tcp
+ port-object range sqlnet 1522
+object-group network GENA-APPS-SERVERS
+ network-object host GBJRLS02
+ network-object host GBSFLF04
+object-group network BT_Radius_Servers
+ description Access to BT Radius Servers
+ network-object host 10.94.243.66
+ network-object host 10.94.243.67
+ network-object host 10.94.243.68
+ network-object host 10.94.243.69
+ network-object host 10.94.243.70
+object-group network SMTP-SERVERS
+ description SMTP Servers
+ network-object host 159.254.171.232
+ network-object host mail.batgen.com
+ network-object host mail2.batgen.com
+ network-object object DE-SMTP-Server
+object-group network BACKUP-SERVERS
+ description GL Backup Servers
+ network-object host 10.176.209.135
+ network-object host GBOHLS10
+object-group network GH-INNOVATIONS-WLC
+ network-object host 10.179.1.210
+object-group network GL-DEV-WLC
+ network-object host z2t3gbglpln33
+object-group network XenApp_Servers
+ description Access to XenApp Servers
+ network-object host 10.176.246.15
+ network-object host 10.176.246.16
+ network-object host 10.176.246.17
+ network-object host 10.176.246.18
+ network-object host 10.176.246.19
+ network-object host 10.176.246.20
+object-group service XenApp_server tcp-udp
+ port-object eq www
+ port-object eq 443
+ port-object eq 1494
+ port-object eq 2598
+ port-object eq 8080
+object-group service PARITY-8081-2 tcp
+ port-object range 8081 8082
+object-group network HCL-MGMT-NETWORK
+ description Defined HCL Network Mgmt Node Access
+ network-object host bat-t23-s01
+ network-object host bat-t23-s03
+ network-object host bat-t23-s06
+ network-object host bat-t23-s07
+ network-object host bat-t23-s32
+ network-object host bat-t23-s33
+ network-object host bat-t23-s04
+object-group network ITAM
+ network-object host GSDITAM
+ network-object host inblodg204.in.batgen.com
+object-group service ITAM-TCP tcp
+ port-object eq 445
+ port-object eq 3389
+ port-object eq 402
+object-group network HCL-MGMT-SERVERS
+ description Defined HCL Network Mgmt Node Access
+ network-object host bat-t23-s01
+ network-object host bat-t23-s02
+ network-object host bat-t23-s03
+ network-object host bat-t23-s04
+ network-object host bat-t23-s05
+ network-object host bat-t23-s31
+ network-object host bat-t23-s32
+object-group service HCL-MGMT-PORTS-TCP tcp
+ port-object eq 135
+ port-object eq 381
+ port-object eq 383
+ port-object range 12001 12005
+object-group network BATGEN-DCs
+ description Batgen.com Domain Controllers
+ network-object host 10.94.30.28
+ network-object host 10.94.30.30
+ network-object host 10.97.12.67
+ network-object host 10.97.12.68
+ network-object host 10.97.12.69
+ network-object host 10.97.12.78
+ network-object host 10.97.32.53
+ network-object host 146.62.215.17
+ network-object host 146.62.215.18
+object-group network UK_TEST_Servers
+ network-object 10.176.245.177 255.255.255.255
+ network-object 10.176.245.172 255.255.255.255
+ network-object 10.176.245.174 255.255.255.255
+object-group network BAT
+ network-object 10.0.0.0 255.0.0.0
+ network-object 164.137.0.0 255.255.0.0
+ network-object 165.75.0.0 255.255.0.0
+ network-object 146.62.0.0 255.255.0.0
+ network-object 159.254.0.0 255.255.0.0
+ network-object 146.105.226.0 255.255.255.0
+object-group network GL573-ITE-BATGEN
+ network-object 10.176.246.64 255.255.255.192
+object-group service POC-BAT-Internal-access tcp
+ port-object eq 3200
+ port-object eq 3205
+ port-object eq 3300
+ port-object eq 3305
+ port-object eq 3600
+ port-object eq 3605
+ port-object eq 50000
+ port-object eq 51000
+ port-object eq 8000
+ port-object eq 9005
+ port-object eq 9010
+ port-object eq 50100
+ port-object eq 50105
+ port-object eq 50005
+object-group network ALTRIS-OUTBOUND
+ network-object host GBOHTF01
+ network-object host Z2T3GBGLVTA02
+ network-object host Z2T3GBGLVTA04
+ network-object host Z2T3GBGLVTA23
+ network-object host Z2T3GBGLVTA31
+object-group network ALTIRIS-SERVERS
+ description Altiris Servers
+ network-object host AltirisNSZ2
+ network-object host GSDITAM
+ network-object host GSDITAM2
+ network-object host 146.62.210.125
+ network-object host 10.90.22.11
+ network-object host 10.94.234.58
+ network-object host Z2T3GBGHVLS04
+ network-object host 10.97.215.30
+object-group service ALTIRIS-NEW tcp
+ description ALTIRIS-NEW
+ port-object range 8098 8098
+ port-object range 445 445
+ port-object range www www
+object-group protocol TCP_UDP
+ protocol-object tcp
+ protocol-object udp
+object-group service EPO_PORTS tcp
+ port-object eq 8448
+ port-object eq 8090
+ port-object eq 8444
+ port-object eq 8082
+ port-object eq https
+ port-object eq www
+ port-object eq 8081
+object-group network EPO_Servers
+ network-object host 10.176.208.227
+ network-object host 10.176.192.45
+ network-object host epo.batgen.com
+object-group network EPO_Clients_AKKADE_DEV
+ network-object host Z2T3GBGLVTA23
+object-group network EPO_Clients_MISC-DEV
+ network-object host GBOHTF01
+ network-object host Z2T3GBGLVTA31
+object-group service Z2T1DEFMVLI02 tcp
+ port-object eq www
+ port-object eq netbios-ssn
+ port-object eq 135
+ port-object eq 445
+ port-object eq 4168
+object-group service HPOVserver_tcp_udp tcp-udp
+ port-object eq 135
+ port-object eq 137
+ port-object eq 138
+ port-object eq 139
+ port-object eq 381
+ port-object eq 383
+ port-object eq 447
+object-group network hpovserver
+ network-object host bat-t23-s02
+ network-object host bat-t23-s03
+ network-object host bat-t23-s04
+ network-object host bat-t23-s05
+object-group network GlobalIPT-clients
+ network-object 10.179.7.0 255.255.255.128
+object-group network CUCM
+ network-object host 10.184.208.4
+ network-object host 10.184.208.5
+ network-object host 10.176.193.203
+ network-object host 10.184.224.6
+ network-object host Z2T3GBGLPTC02
+object-group network CorporateDNS
+ network-object host Z2T3GBGLPLS06
+ network-object host Z2T3GBSFVLS07
+object-group service tcp_all_corporate_service_A tcp-udp
+ port-object eq 1521
+ port-object eq 1522
+object-group service tcp_all_corporate_service tcp-udp
+ port-object eq 9000
+ port-object eq 9001
+ port-object eq 9002
+ port-object eq 9003
+ port-object eq 6400
+object-group network INTERACT-TEST-SERVERS
+ description Test Interact / Domino Server for Patrick Sundararajoo G.Clements 31/8/12
+ network-object object Z2T3GBGLVTW13
+ network-object object Z2T3GBGLVTW14
+ network-object object Z2T3GBGLVTW15
+object-group network DM_INLINE_NETWORK_10
+ network-object object UKCMDW1
+ network-object object UKCMDW1P
+object-group network DM_INLINE_NETWORK_6
+ network-object object z2t3gbsfvlm03
+object-group network DM_INLINE_NETWORK_7
+ group-object BACKUP-SERVERS
+object-group network DM_INLINE_NETWORK_9
+ network-object host 164.137.46.222
+ network-object host 164.137.46.224
+ network-object object HVW2KDWH1
+object-group service DM_INLINE_TCP_1 tcp
+ port-object eq ftp
+ port-object eq ftp-data
+object-group service DM_INLINE_SERVICE_1
+ service-object icmp 
+ service-object tcp destination eq smtp 
+object-group network DM_INLINE_NETWORK_11
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_13
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_14
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_15
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_18
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_19
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_20
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_21
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_22
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network DM_INLINE_NETWORK_24
+ network-object host 10.176.128.124
+ network-object host 10.177.14.226
+object-group service tcp_epo_services tcp-udp
+ port-object eq 8081
+ port-object eq 8082
+ port-object eq 8090
+ port-object eq 8448
+object-group network NTP
+ description NTP Servers
+ network-object object Z2T3GBSFPLN09
+ network-object object KL-TimeSyncServer300
+object-group network FFT_SGPR_HPOV
+ network-object host 10.94.194.11
+ network-object host 10.94.194.12
+ network-object host 10.94.194.13
+ network-object host 10.94.194.14
+ network-object host 10.94.194.16
+ network-object host 10.94.194.17
+ network-object host 10.94.194.15
+ network-object host 10.94.194.18
+ network-object host 10.94.194.19
+ network-object host 10.97.194.20
+ network-object host 10.97.194.21
+ network-object host 10.97.194.31
+ network-object host 10.97.194.32
+ network-object host 10.97.194.33
+ network-object host 10.97.194.34
+object-group service HPOV_tcp tcp
+ port-object eq netbios-ssn
+ port-object eq 445
+ port-object eq 3389
+ port-object eq 135
+ port-object eq 381
+ port-object eq 383
+ port-object eq ldap
+ port-object eq 2381
+ port-object eq 50000
+object-group service HPOV_udp udp
+ port-object eq netbios-ns
+ port-object eq netbios-dgm
+ port-object eq snmptrap
+ port-object eq tftp
+ port-object eq syslog
+ port-object eq 1431
+ port-object eq 9000
+ port-object eq 16236
+object-group network EPO_Clients_ONEWEB
+ network-object host 10.176.247.166
+object-group network Test-Servers
+ description BAT Corporate Network Ranges
+ network-object host 10.176.247.48
+ network-object host 10.176.247.49
+ network-object host 10.176.247.50
+ network-object host 10.176.247.33
+ network-object host 10.176.247.34
+ network-object host 10.176.247.35
+ network-object host 10.176.247.36
+object-group network Beacon_Source
+ network-object host 10.94.234.229
+ network-object host 10.16.8.56
+ network-object host 10.32.8.53
+ network-object host 10.92.215.22
+object-group service Beacon_ports tcp-udp
+ port-object eq 22
+ port-object eq 139
+ port-object eq 445
+ port-object eq 1521
+ port-object eq 2483
+ port-object eq 443
+ port-object eq 1433
+object-group network Beacon_Dest
+ network-object 10.176.247.192 255.255.255.192
+ network-object 10.176.247.0 255.255.255.240
+ network-object 10.176.245.224 255.255.255.224
+ network-object 10.176.247.32 255.255.255.224
+ network-object 10.176.247.64 255.255.255.240
+ network-object 10.176.247.96 255.255.255.240
+ network-object 10.176.245.96 255.255.255.224
+ network-object 10.179.7.128 255.255.255.128
+ network-object 10.176.245.80 255.255.255.240
+ network-object 10.176.247.144 255.255.255.240
+ network-object 10.176.245.160 255.255.255.224
+ network-object 10.176.246.0 255.255.255.192
+ network-object 10.176.246.64 255.255.255.192
+ network-object 10.176.247.160 255.255.255.240
+ network-object 10.176.246.128 255.255.255.128
+ network-object 10.176.246.120 255.255.255.248
+ network-object 10.176.245.128 255.255.255.240
+ network-object 10.176.194.160 255.255.255.240
+object-group network EPO_Clients_ONEWEB_Migration
+ network-object host 10.176.247.168
+ network-object host 10.176.247.166
+object-group network DM_INLINE_NETWORK_25
+ network-object host 10.92.214.22
+ network-object host 10.92.214.23
+ network-object host 10.94.213.33
+ network-object host 10.94.213.31
+ network-object host 10.97.214.37
+ network-object host 10.97.214.38
+object-group network Flexnet_Project
+ network-object host 10.94.234.229
+ network-object host 10.92.215.22
+ network-object host 10.16.8.56
+ network-object host 10.32.8.53
+object-group service Flexnet_ports
+ service-object tcp-udp destination eq 22 
+ service-object tcp-udp destination eq 139 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 135 
+ service-object icmp 
+object-group network Flexnet_Project_DMZ
+ network-object 10.176.247.192 255.255.255.192
+ network-object 10.176.245.224 255.255.255.224
+ network-object 10.176.245.96 255.255.255.224
+ network-object 10.176.245.80 255.255.255.240
+ network-object 10.176.245.160 255.255.255.224
+ network-object 10.176.246.0 255.255.255.192
+ network-object 10.176.246.64 255.255.255.192
+ network-object 172.30.10.0 255.255.255.248
+ network-object 10.176.246.128 255.255.255.128
+ network-object 10.176.247.0 255.255.255.240
+ network-object 10.176.247.32 255.255.255.224
+ network-object 10.176.247.64 255.255.255.240
+ network-object 10.176.247.96 255.255.255.240
+ network-object 10.179.7.128 255.255.255.128
+ network-object 10.179.7.0 255.255.255.128
+ network-object 10.176.247.144 255.255.255.240
+ network-object 10.176.247.160 255.255.255.240
+ network-object 10.176.245.128 255.255.255.240
+object-group network AZURE_NETWORK
+ network-object host 10.92.214.22
+ network-object host 10.92.214.23
+ network-object host 10.94.213.33
+ network-object host 10.94.213.31
+ network-object host 10.97.214.37
+ network-object host 10.97.214.38
+ network-object host 10.32.132.4
+ network-object host 10.32.132.5
+object-group network Server_Migration1
+ network-object object z2t3gbglvta42
+ network-object object Z2T3GBGLVTA04
+object-group network Server_Migration2
+ network-object object Z2T3GBGLVTA37
+ network-object object Z2T3GBGLVTA38
+object-group network BAT-Qualys-scanner-IPs
+ network-object host 10.16.132.48
+ network-object host 10.16.132.49
+ network-object host 10.32.132.40
+ network-object host 10.32.132.41
+ network-object host 10.176.192.218
+ network-object host 10.176.192.219
+ network-object host 10.176.246.5
+object-group network qualys
+ network-object 10.0.0.0 255.0.0.0
+access-list HCL-DELL-2012_access_in extended permit tcp object-group UK_TEST_Servers host 10.176.211.53 eq 9400 
+access-list HCL-DELL-2012_access_in extended permit tcp object-group UK_TEST_Servers host 10.176.194.130 eq 9400 
+access-list ftp-list extended permit tcp any4 any4 eq 9421 
+access-list GL520POD extended permit ip any4 any4 
+access-list GL520POD extended deny ip any4 any4 log 
+access-list AKKADE-DEV_access_in extended permit udp 10.176.247.64 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list AKKADE-DEV_access_in extended permit icmp 10.176.247.64 255.255.255.240 object-group FFT_SGPR_HPOV 
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list AKKADE-DEV_access_in extended permit udp host 10.176.247.65 host 10.94.104.198 eq 9256 
+access-list AKKADE-DEV_access_in extended permit tcp host 10.176.247.65 host 10.94.104.198 object-group Z2T1DEFMVLI02 
+access-list AKKADE-DEV_access_in extended permit tcp host 10.176.247.65 host 10.176.194.130 eq 9400 
+access-list AKKADE-DEV_access_in extended permit tcp object-group EPO_Clients_AKKADE_DEV object-group EPO_Servers object-group EPO_PORTS 
+access-list AKKADE-DEV_access_in remark Required for AD domain & DNS
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list AKKADE-DEV_access_in remark Required for AD domain & DNS
+access-list AKKADE-DEV_access_in extended permit udp 10.176.247.64 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list AKKADE-DEV_access_in remark Required for GPO updates
+access-list AKKADE-DEV_access_in extended permit icmp 10.176.247.64 255.255.255.240 object-group OH-Domain-Controllers echo 
+access-list AKKADE-DEV_access_in remark Required for WSUS
+access-list AKKADE-DEV_access_in remark Required for WSUS
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object Z2T3GBSFPLS01 object-group WSUS 
+access-list AKKADE-DEV_access_in remark Required for ePO / AV
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list AKKADE-DEV_access_in extended permit icmp 10.176.247.64 255.255.255.240 object-group ITAM 
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object-group ITAM object-group ITAM-TCP 
+access-list AKKADE-DEV_access_in extended permit icmp 10.176.247.64 255.255.255.240 object-group HCL-MGMT-SERVERS 
+access-list AKKADE-DEV_access_in extended permit tcp 10.176.247.64 255.255.255.240 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list AKKADE-DEV_access_in remark Required for internet access at request of Brian Lane - CR16473 - Andy Prentice
+access-list AKKADE-DEV_access_in extended permit tcp object Z2T3GBGLVTA23 host 10.94.20.115 object-group POC-BAT-Internal-access 
+access-list AKKADE-DEV_access_in extended permit tcp object Z2T3GBGLVTA23 host 10.94.30.80 object-group POC-BAT-Internal-access 
+access-list AKKADE-DEV_access_in extended permit tcp object Z2T3GBGLVTA23 host 10.94.20.113 object-group POC-BAT-Internal-access 
+access-list AKKADE-DEV_access_in extended permit tcp object Z2T3GBGLVTA23 host 10.94.10.111 object-group POC-BAT-Internal-access 
+access-list AKKADE-DEV_access_in extended permit tcp object Z2T3GBGLVTA23 host 10.94.10.169 object-group POC-BAT-Internal-access 
+access-list AKKADE-DEV_access_in extended permit tcp object-group ALTRIS-OUTBOUND object-group ALTIRIS-SERVERS object-group ALTIRIS-NEW 
+access-list AKKADE-DEV_access_in extended deny ip any4 any4 log 
+access-list WIPRODEV extended permit ip 10.176.245.96 255.255.255.224 10.0.0.0 255.0.0.0 
+access-list WIPRODEV extended deny ip any4 any4 log 
+access-list GL570-ITE-FIXED extended permit icmp host 10.176.246.25 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit icmp host 10.176.246.24 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit icmp host 10.176.246.5 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit tcp object GL570-ITE-FIXED object-group Corporate eq www 
+access-list GL570-ITE-FIXED extended permit tcp object GL570-ITE-FIXED any4 eq 9400 
+access-list GL570-ITE-FIXED extended permit object-group TCP_UDP host 10.176.246.25 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit object-group TCP_UDP host 10.176.246.24 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit tcp object GL570-ITE-FIXED any4 eq https 
+access-list GL570-ITE-FIXED extended permit object-group TCP_UDP host 10.176.246.5 object-group Corporate 
+access-list GL570-ITE-FIXED extended permit tcp object GL570-ITE-FIXED host 10.176.246.123 eq ftp 
+access-list GL570-ITE-FIXED extended permit ip object GL570-ITE-FIXED object GL580-ITE-DHCP 
+access-list GL570-ITE-FIXED extended deny ip any4 any4 log 
+access-list GL580-ITE-DHCP extended permit ip object GL580-ITE-DHCP object GL570-ITE-FIXED 
+access-list GL580-ITE-DHCP extended deny ip any4 any4 log 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit tcp host 10.176.246.125 object-group Corporate eq https 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit tcp host 10.176.246.124 object-group Corporate eq https 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.124 object-group XenApp_Servers object-group XenApp_server 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.124 object-group BT_Radius_Servers eq 1813 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.124 object-group BT_Radius_Servers eq 1812 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.123 object-group Batdev_DC eq domain 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.123 object-group Batdev_DC eq 123 
+access-list GL585-ITE-INSIDE-DMZ_in extended permit object-group TCP_UDP host 10.176.246.123 object-group Batdev_DC eq 636 
+access-list GL585-ITE-INSIDE-DMZ_in extended deny ip any4 any4 log 
+access-list GL573-ITE-BATGEN extended permit ip object-group GL573-ITE-BATGEN object-group Corporate 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp object-group TLMO-Mgmt object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp object-group TLMO-Mgmt object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit icmp 10.176.247.192 255.255.255.192 164.137.0.0 255.255.0.0 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit icmp 10.176.247.192 255.255.255.192 159.254.0.0 255.255.0.0 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit icmp 10.176.247.192 255.255.255.192 146.62.0.0 255.255.0.0 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit icmp 10.176.247.192 255.255.255.192 165.75.0.0 255.255.0.0 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit icmp 10.176.247.192 255.255.255.192 10.0.0.0 255.0.0.0 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp 10.176.247.192 255.255.255.192 164.137.0.0 255.255.0.0 eq ssh 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp 10.176.247.192 255.255.255.192 159.254.0.0 255.255.0.0 eq ssh 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp 10.176.247.192 255.255.255.192 146.62.0.0 255.255.0.0 eq ssh 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp 10.176.247.192 255.255.255.192 165.75.0.0 255.255.0.0 eq ssh 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp 10.176.247.192 255.255.255.192 10.0.0.0 255.0.0.0 eq ssh 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp 10.176.247.192 255.255.255.192 164.137.0.0 255.255.0.0 eq tftp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp 10.176.247.192 255.255.255.192 159.254.0.0 255.255.0.0 eq tftp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp 10.176.247.192 255.255.255.192 146.62.0.0 255.255.0.0 eq tftp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp 10.176.247.192 255.255.255.192 165.75.0.0 255.255.0.0 eq tftp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp 10.176.247.192 255.255.255.192 10.0.0.0 255.0.0.0 eq tftp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp object-group TLMO-Mgmt object CISCOWORKS eq tacacs 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp object-group TLMO-Mgmt object-group NTP eq ntp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp object-group TLMO-Mgmt object-group HCL-MGMT-NETWORK eq snmp 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit udp object-group TLMO-Mgmt object-group HCL-MGMT-NETWORK eq snmptrap 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit tcp object-group TLMO-Mgmt object-group ITAM object-group ITAM-TCP 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit ip host 10.176.247.212 host 10.176.208.231 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit ip host 10.176.247.212 host 10.176.192.33 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit ip host 10.176.247.213 host 10.176.208.231 
+access-list MOTL-MANAGEMENT_access_in_1 extended permit ip host 10.176.247.213 host 10.176.192.33 
+access-list MOTL-MANAGEMENT_access_in_1 extended deny ip any4 any4 log 
+access-list EAI-DEV_access_in_1 extended permit tcp host 10.176.247.4 object AZGLGBNEVLA20 range ftp-data ssh 
+access-list EAI-DEV_access_in_1 extended permit tcp host 10.176.247.4 host 10.94.224.10 eq 26389 
+access-list EAI-DEV_access_in_1 extended permit tcp host 10.176.247.4 host 10.94.234.115 eq 1522 
+access-list EAI-DEV_access_in_1 extended permit ip object-group Server_Migration2 object-group AZURE_NETWORK 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object z2t1defmvsd007 eq 1522 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object z2t1defmvld007 eq sqlnet 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object z2t1defmvtd002 eq sqlnet 
+access-list EAI-DEV_access_in_1 extended permit icmp object Z2T3GBGLVTA37 object z2t1defmvtd002 
+access-list EAI-DEV_access_in_1 extended permit icmp object Z2T3GBGLVTA37 object z2t1defmvld007 
+access-list EAI-DEV_access_in_1 extended permit icmp 10.176.247.0 255.255.255.240 object-group FFT_SGPR_HPOV 
+access-list EAI-DEV_access_in_1 extended permit udp 10.176.247.0 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list EAI-DEV_access_in_1 extended permit tcp host 10.176.247.4 host 10.94.234.92 eq sqlnet 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list EAI-DEV_access_in_1 extended permit udp 10.176.247.0 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list EAI-DEV_access_in_1 remark Required for GPO updates
+access-list EAI-DEV_access_in_1 extended permit icmp 10.176.247.0 255.255.255.240 object-group OH-Domain-Controllers echo 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object Z2T3GBSFPLS01 object-group WSUS 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list EAI-DEV_access_in_1 remark Required for backups
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group BACKUP-SERVERS object-group LEGATO-SERVER-BACKUP 
+access-list EAI-DEV_access_in_1 remark Required for backups
+access-list EAI-DEV_access_in_1 extended permit udp 10.176.247.0 255.255.255.240 object-group BACKUP-SERVERS eq netbios-ns 
+access-list EAI-DEV_access_in_1 extended permit icmp 10.176.247.0 255.255.255.240 object-group ITAM 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group ITAM object-group ITAM-TCP 
+access-list EAI-DEV_access_in_1 extended permit icmp 10.176.247.0 255.255.255.240 object-group HCL-MGMT-SERVERS 
+access-list EAI-DEV_access_in_1 extended permit tcp 10.176.247.0 255.255.255.240 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list EAI-DEV_access_in_1 extended permit ip object-group INTERACT-TEST-SERVERS object-group Corporate 
+access-list EAI-DEV_access_in_1 extended permit icmp object-group DM_INLINE_NETWORK_11 object-group Corporate echo-reply 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object DataWarehouseServer object-group SQLNet 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object-group DM_INLINE_NETWORK_10 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object-group DM_INLINE_NETWORK_9 eq 8081 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA37 object DEFMLDWH02 object-group PARITY-8081-2 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA38 object DataWarehouseServer object-group ORACLE-DB 
+access-list EAI-DEV_access_in_1 extended permit ip object Z2T3GBGLVTA38 object-group DM_INLINE_NETWORK_24 
+access-list EAI-DEV_access_in_1 extended permit icmp object Z2T3GBGLVTA38 host 10.177.14.226 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA38 object UKCMDW1 eq sqlnet 
+access-list EAI-DEV_access_in_1 extended permit tcp object Z2T3GBGLVTA38 object HVW2KDWH1 eq 8081 
+access-list EAI-DEV_access_in_1 extended permit udp object-group DM_INLINE_NETWORK_13 object-group DM_INLINE_NETWORK_7 eq netbios-ns 
+access-list EAI-DEV_access_in_1 extended permit tcp object-group DM_INLINE_NETWORK_14 object Z2T1DELGPLA01 eq 26389 
+access-list EAI-DEV_access_in_1 extended permit tcp object-group DM_INLINE_NETWORK_15 object-group DM_INLINE_NETWORK_6 object-group DM_INLINE_TCP_1 
+access-list EAI-DEV_access_in_1 extended permit tcp object-group DM_INLINE_NETWORK_18 object-group ALTIRIS-SERVERS object-group ALTIRIS-NEW 
+access-list EAI-DEV_access_in_1 extended permit object-group DM_INLINE_SERVICE_1 object-group DM_INLINE_NETWORK_19 object-group SMTP-SERVERS 
+access-list EAI-DEV_access_in_1 extended permit tcp object-group DM_INLINE_NETWORK_20 object-group BATGEN-DCs object-group AD-DOMAIN-TCP 
+access-list EAI-DEV_access_in_1 extended permit udp object-group DM_INLINE_NETWORK_21 object-group BATGEN-DCs object-group AD-DOMAIN-UDP 
+access-list EAI-DEV_access_in_1 extended permit icmp object-group DM_INLINE_NETWORK_22 object-group BATGEN-DCs echo 
+access-list EAI-DEV_access_in_1 extended permit ip object Z2T3GBGLVTA12 10.0.0.0 255.0.0.0 
+access-list EAI-DEV_access_in_1 extended deny ip any4 any4 log 
+access-list MISC-DEV_access_in extended permit ip host 10.176.247.42 object-group AZURE_NETWORK 
+access-list MISC-DEV_access_in extended permit ip object-group Test-Servers 10.0.0.0 255.0.0.0 
+access-list MISC-DEV_access_in extended permit udp 10.176.247.32 255.255.255.224 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list MISC-DEV_access_in extended permit icmp 10.176.247.32 255.255.255.224 object-group FFT_SGPR_HPOV 
+access-list MISC-DEV_access_in extended permit tcp object-group EPO_Clients_MISC-DEV object-group EPO_Servers object-group EPO_PORTS 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list MISC-DEV_access_in extended permit udp 10.176.247.32 255.255.255.224 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list MISC-DEV_access_in remark Required for GPO updates
+access-list MISC-DEV_access_in extended permit icmp 10.176.247.32 255.255.255.224 object-group OH-Domain-Controllers echo 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group BATGEN-DCs object-group AD-DOMAIN-TCP 
+access-list MISC-DEV_access_in extended permit udp 10.176.247.32 255.255.255.224 object-group BATGEN-DCs object-group AD-DOMAIN-UDP 
+access-list MISC-DEV_access_in remark Required for HCL updates
+access-list MISC-DEV_access_in extended permit icmp 10.176.247.32 255.255.255.224 object-group BATGEN-DCs echo 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object Z2T3GBSFPLS01 object-group WSUS 
+access-list MISC-DEV_access_in remark Required for ePO
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list MISC-DEV_access_in remark Required for GENA Application Deployment by Inocentiu Calugaru - 10/5/07
+access-list MISC-DEV_access_in extended permit ip object GBOHTF01 object-group GENA-APPS-SERVERS 
+access-list MISC-DEV_access_in remark Required by Inocentiu Calugari 9/8/07
+access-list MISC-DEV_access_in extended permit ip object GBOHTF01 host 10.176.66.38 
+access-list MISC-DEV_access_in remark Required for App Package Transfer by Inocentiu Calugaru - 10/5/07
+access-list MISC-DEV_access_in extended permit tcp object GBOHTF01 164.137.110.0 255.255.255.0 eq ftp 
+access-list MISC-DEV_access_in remark Required for App Package Transfer by Inocentiu Calugaru - 10/5/07
+access-list MISC-DEV_access_in extended permit tcp object GBOHTF01 164.137.110.0 255.255.255.0 eq ftp-data 
+access-list MISC-DEV_access_in remark Required for Servicedesk testing 24/7
+access-list MISC-DEV_access_in extended permit ip object GBOH112371 164.137.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object GBOH112371 159.254.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object GBOH112371 146.62.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object GBOH112371 165.75.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object GBOH112371 10.0.0.0 255.0.0.0 log 
+access-list MISC-DEV_access_in remark Required for Altiris Package and Deployment Testing - 20/8/07
+access-list MISC-DEV_access_in extended permit ip object GBOHTF02-NEW 164.137.0.0 255.255.0.0 
+access-list MISC-DEV_access_in extended permit ip object GBOHTF02-NEW 159.254.0.0 255.255.0.0 
+access-list MISC-DEV_access_in extended permit ip object GBOHTF02-NEW 146.62.0.0 255.255.0.0 
+access-list MISC-DEV_access_in extended permit ip object GBOHTF02-NEW 165.75.0.0 255.255.0.0 
+access-list MISC-DEV_access_in extended permit ip object GBOHTF02-NEW 10.0.0.0 255.0.0.0 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group BACKUP-SERVERS object-group LEGATO-SERVER-BACKUP 
+access-list MISC-DEV_access_in extended permit udp 10.176.247.32 255.255.255.224 object-group BACKUP-SERVERS eq netbios-ns 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA06 164.137.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA06 159.254.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA06 146.62.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA06 165.75.0.0 255.255.0.0 log 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA06 10.0.0.0 255.0.0.0 log 
+access-list MISC-DEV_access_in extended permit icmp object GBOHTF01 any4 
+access-list MISC-DEV_access_in extended permit icmp 10.176.247.32 255.255.255.224 object-group ITAM 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group ITAM object-group ITAM-TCP 
+access-list MISC-DEV_access_in extended permit icmp 10.176.247.32 255.255.255.224 object-group HCL-MGMT-SERVERS 
+access-list MISC-DEV_access_in extended permit tcp 10.176.247.32 255.255.255.224 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list MISC-DEV_access_in extended permit tcp object-group ALTRIS-OUTBOUND object-group ALTIRIS-SERVERS object-group ALTIRIS-NEW 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 164.137.0.0 255.255.0.0 eq www 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 159.254.0.0 255.255.0.0 eq www 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 146.62.0.0 255.255.0.0 eq www 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 165.75.0.0 255.255.0.0 eq www 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 10.0.0.0 255.0.0.0 eq www 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 164.137.0.0 255.255.0.0 eq ldap 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 159.254.0.0 255.255.0.0 eq ldap 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 146.62.0.0 255.255.0.0 eq ldap 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 165.75.0.0 255.255.0.0 eq ldap 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 10.0.0.0 255.0.0.0 eq ldap 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 164.137.0.0 255.255.0.0 eq https 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 159.254.0.0 255.255.0.0 eq https 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 146.62.0.0 255.255.0.0 eq https 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 165.75.0.0 255.255.0.0 eq https 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 10.0.0.0 255.0.0.0 eq https 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 164.137.0.0 255.255.0.0 eq lotusnotes 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 159.254.0.0 255.255.0.0 eq lotusnotes 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 146.62.0.0 255.255.0.0 eq lotusnotes 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 165.75.0.0 255.255.0.0 eq lotusnotes 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 10.0.0.0 255.0.0.0 eq lotusnotes 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 164.137.0.0 255.255.0.0 eq 63148 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 159.254.0.0 255.255.0.0 eq 63148 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 146.62.0.0 255.255.0.0 eq 63148 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 165.75.0.0 255.255.0.0 eq 63148 
+access-list MISC-DEV_access_in extended permit tcp object Z2T3GBGLVTA31 10.0.0.0 255.0.0.0 eq 63148 
+access-list MISC-DEV_access_in extended permit ip object Z2T3GBGLVTA02 object-group Corporate 
+access-list MISC-DEV_access_in extended deny ip any4 any4 log 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 host 10.176.192.141 eq 49307 
+access-list PARITY-DEV extended permit ip object-group Server_Migration1 object-group AZURE_NETWORK 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 host 10.176.192.141 eq 4930 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 object-group EPO_Servers object-group EPO_PORTS 
+access-list PARITY-DEV extended permit udp 10.176.247.96 255.255.255.224 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.224 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.224 object-group FFT_SGPR_HPOV 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 host 10.176.192.201 object-group tcp_epo_services 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 object-group Corporate object-group tcp_all_corporate_service 
+access-list PARITY-DEV extended permit tcp host 10.176.247.102 object-group Corporate object-group tcp_all_corporate_service_A 
+access-list PARITY-DEV remark ALLOW PARITY VM DEV SERVERS RESTRICTED ACCESS TO CORPORATE LAN
+access-list PARITY-DEV extended permit udp object Z2T3GBGLVTA04 object-group hpovserver object-group HPOVserver_tcp_udp 
+access-list PARITY-DEV extended permit tcp object Z2T3GBGLVTA04 object-group hpovserver object-group HPOVserver_tcp_udp 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list PARITY-DEV extended permit udp 10.176.247.96 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list PARITY-DEV remark Required for GPO updates
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.240 object-group OH-Domain-Controllers echo 
+access-list PARITY-DEV remark ALLOW PARITY VM DEV SERVERS RESTRICTED ACCESS TO CORPORATE LAN
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-TCP 
+access-list PARITY-DEV extended permit udp 10.176.247.96 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-UDP 
+access-list PARITY-DEV remark Required for HCL updates
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.240 object-group BATGEN-DCs echo 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object Z2T3GBSFPLS01 object-group WSUS 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list PARITY-DEV extended permit ip object z2t3gbglvta08 object-group Corporate 
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.240 object-group ITAM 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object-group ITAM object-group ITAM-TCP 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.240 object-group SMTP-SERVERS eq smtp 
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.240 object-group SMTP-SERVERS 
+access-list PARITY-DEV extended permit icmp 10.176.247.96 255.255.255.224 object-group HCL-MGMT-SERVERS 
+access-list PARITY-DEV extended permit tcp 10.176.247.96 255.255.255.224 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list PARITY-DEV extended permit tcp object-group ALTRIS-OUTBOUND object-group ALTIRIS-SERVERS object-group ALTIRIS-NEW 
+access-list PARITY-DEV extended permit ip object z2t3gbglvta42 any4 
+access-list PARITY-DEV extended deny ip any4 any4 log 
+access-list HQIT-CLIENT-LAN_access_in remark Office Extend Clients Access into Corporate LAN (G.Clements 11/10/11)
+access-list HQIT-CLIENT-LAN_access_in extended permit ip 10.179.7.128 255.255.255.128 164.137.0.0 255.255.0.0 
+access-list HQIT-CLIENT-LAN_access_in extended permit ip 10.179.7.128 255.255.255.128 159.254.0.0 255.255.0.0 
+access-list HQIT-CLIENT-LAN_access_in extended permit ip 10.179.7.128 255.255.255.128 146.62.0.0 255.255.0.0 
+access-list HQIT-CLIENT-LAN_access_in extended permit ip 10.179.7.128 255.255.255.128 165.75.0.0 255.255.0.0 
+access-list HQIT-CLIENT-LAN_access_in extended permit ip 10.179.7.128 255.255.255.128 10.0.0.0 255.0.0.0 
+access-list HQIT-CLIENT-LAN_access_in extended deny ip any4 any4 log 
+access-list SBS-DEV_access_in extended permit udp 10.176.247.144 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list SBS-DEV_access_in extended permit icmp 10.176.247.144 255.255.255.240 object-group FFT_SGPR_HPOV 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list SBS-DEV_access_in extended permit udp 10.176.247.144 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list SBS-DEV_access_in remark Required for GPO updates
+access-list SBS-DEV_access_in extended permit icmp 10.176.247.144 255.255.255.240 object-group OH-Domain-Controllers echo 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-TCP 
+access-list SBS-DEV_access_in extended permit udp 10.176.247.144 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-UDP 
+access-list SBS-DEV_access_in remark Required for HCL updates
+access-list SBS-DEV_access_in extended permit icmp 10.176.247.144 255.255.255.240 object-group BATGEN-DCs echo 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object Z2T3GBSFPLS01 object-group WSUS 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16 164.137.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16 159.254.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16 146.62.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16 165.75.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16 10.0.0.0 255.0.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-153 164.137.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-153 159.254.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-153 146.62.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-153 165.75.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-153 10.0.0.0 255.0.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-150 164.137.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-150 159.254.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-150 146.62.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-150 165.75.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-150 10.0.0.0 255.0.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-151 164.137.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-151 159.254.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-151 146.62.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-151 165.75.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-151 10.0.0.0 255.0.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-152 164.137.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-152 159.254.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-152 146.62.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-152 165.75.0.0 255.255.0.0 
+access-list SBS-DEV_access_in extended permit icmp object Z2T3GBGLVTA16-152 10.0.0.0 255.0.0.0 
+access-list SBS-DEV_access_in extended permit icmp 10.176.247.144 255.255.255.240 object-group ITAM 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group ITAM object-group ITAM-TCP 
+access-list SBS-DEV_access_in extended permit icmp 10.176.247.144 255.255.255.240 object-group HCL-MGMT-SERVERS 
+access-list SBS-DEV_access_in extended permit tcp 10.176.247.144 255.255.255.240 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list SBS-DEV_access_in remark Testing rule for Kulvinder
+access-list SBS-DEV_access_in extended permit ip object-group SBS-Servers any4 
+access-list SBS-DEV_access_in extended deny ip any4 any4 log 
+access-list ONEWEB_access_in extended permit ip object-group EPO_Clients_ONEWEB_Migration object-group DM_INLINE_NETWORK_25 
+access-list ONEWEB_access_in extended permit tcp object-group EPO_Clients_ONEWEB object-group EPO_Servers object-group EPO_PORTS 
+access-list ONEWEB_access_in extended permit udp 10.176.247.160 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_udp 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group FFT_SGPR_HPOV object-group HPOV_tcp 
+access-list ONEWEB_access_in extended permit icmp 10.176.247.160 255.255.255.240 object-group FFT_SGPR_HPOV 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-TCP 
+access-list ONEWEB_access_in remark Required for AD domain & DNS
+access-list ONEWEB_access_in extended permit udp 10.176.247.160 255.255.255.240 object-group OH-Domain-Controllers object-group AD-DOMAIN-UDP 
+access-list ONEWEB_access_in remark Required for GPO updates
+access-list ONEWEB_access_in extended permit icmp 10.176.247.160 255.255.255.240 object-group OH-Domain-Controllers echo 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-TCP 
+access-list ONEWEB_access_in remark Required for AD domain & DNS
+access-list ONEWEB_access_in extended permit udp 10.176.247.160 255.255.255.240 object-group BATGEN-DCs object-group AD-DOMAIN-UDP 
+access-list ONEWEB_access_in remark Required for HCL updates
+access-list ONEWEB_access_in extended permit icmp 10.176.247.160 255.255.255.240 object-group BATGEN-DCs echo 
+access-list ONEWEB_access_in remark Required for WSUS
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object Z2T3GBSFPLS01 object-group WSUS 
+access-list ONEWEB_access_in remark Required for ePO / AV
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group EPO-SERVERS object-group EPO-REPORTER 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group BACKUP-SERVERS object-group LEGATO-SERVER-BACKUP 
+access-list ONEWEB_access_in extended permit udp 10.176.247.160 255.255.255.240 object-group BACKUP-SERVERS eq netbios-ns 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group ITAM object-group ITAM-TCP 
+access-list ONEWEB_access_in extended permit icmp 10.176.247.160 255.255.255.240 object-group ITAM 
+access-list ONEWEB_access_in extended permit icmp 10.176.247.160 255.255.255.240 object-group HCL-MGMT-SERVERS 
+access-list ONEWEB_access_in extended permit tcp 10.176.247.160 255.255.255.240 object-group HCL-MGMT-SERVERS object-group HCL-MGMT-PORTS-TCP 
+access-list ONEWEB_access_in extended permit tcp object Z2T3GBGLVTW16 object-group Corporate eq 3389 
+access-list ONEWEB_access_in extended permit tcp object Z2T3GBGLVTW16 object-group ALTIRIS-SERVERS object-group ALTIRIS-NEW 
+access-list ONEWEB_access_in extended deny ip any4 any4 log 
+access-list WIFI-DEV_access_in extended permit 97 object-group GL-DEV-WLC object-group GH-INNOVATIONS-WLC 
+access-list WIFI-DEV_access_in extended permit ip 10.176.0.0 255.255.0.0 any4 
+access-list WIFI-DEV_access_in extended deny ip any4 any4 log 
+access-list GLOBALIPT-CLIENTS_access_in remark VoWLAN IPT Clients Access into Corporate LAN (L.Dale 25/10/11)
+access-list GLOBALIPT-CLIENTS_access_in extended permit udp object-group GlobalIPT-clients object-group CUCM eq tftp 
+access-list GLOBALIPT-CLIENTS_access_in extended permit udp 10.179.7.0 255.255.255.128 10.176.192.0 255.255.192.0 range 16384 32767 
+access-list GLOBALIPT-CLIENTS_access_in extended permit udp 10.179.7.0 255.255.255.128 10.184.192.0 255.255.192.0 range 16384 32767 
+access-list GLOBALIPT-CLIENTS_access_in extended permit udp object-group GlobalIPT-clients object-group CorporateDNS eq domain 
+access-list GLOBALIPT-CLIENTS_access_in extended permit tcp object-group GlobalIPT-clients object-group CUCM 
+access-list GLOBALIPT-CLIENTS_access_in extended permit ip any4 host 10.184.208.17 
+access-list GLOBALIPT-CLIENTS_access_in extended permit icmp any4 host 10.184.208.17 
+access-list GLOBALIPT-CLIENTS_access_in extended deny ip any4 any4 log 
+access-list Corporate_access_in extended permit ip object-group BAT-Qualys-scanner-IPs object-group qualys 
+access-list Corporate_access_in extended permit object-group Flexnet_ports object-group Flexnet_Project object-group Flexnet_Project_DMZ 
+access-list Corporate_access_in extended permit object-group TCP_UDP object-group Beacon_Source object-group Beacon_Dest object-group Beacon_ports 
+access-list Corporate_access_in remark Full access from Corporate networks to all DMZ networks (requested by L.Dale) - G.Clements 12/02/07
+access-list Corporate_access_in extended permit ip object-group Corporate any4 
+access-list Corporate_access_in extended permit icmp object-group Corporate any4 
+access-list Corporate_access_in extended deny ip any4 any4 log 
+access-list Internet remark Required for Office Extend Pilot - G.Clements 11/10/11
+access-list Internet extended deny udp any4 any4 range 33434 33534 log 
+access-list Internet extended deny ip any4 object-group BAT log 
+access-list Internet extended deny ip any4 any4 log 
+access-list GLOBALMOBILE-TRANSIT_access_in remark GlobalMObile Clients Access to Internet (L.Dale 25/10/11)
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip 10.176.245.192 255.255.255.224 164.137.0.0 255.255.0.0 
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip 10.176.245.192 255.255.255.224 159.254.0.0 255.255.0.0 
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip 10.176.245.192 255.255.255.224 146.62.0.0 255.255.0.0 
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip 10.176.245.192 255.255.255.224 165.75.0.0 255.255.0.0 
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip 10.176.245.192 255.255.255.224 10.0.0.0 255.0.0.0 
+access-list GLOBALMOBILE-TRANSIT_access_in extended permit ip 10.176.245.192 255.255.255.224 any4 
+access-list GLOBALMOBILE-TRANSIT_access_in extended permit udp host 10.176.245.82 object Z2T3GBSFPLN09 eq ntp 
+access-list GLOBALMOBILE-TRANSIT_access_in extended permit tcp host 10.176.245.82 object CISCOWORKS eq tacacs 
+access-list GLOBALMOBILE-TRANSIT_access_in extended permit udp host 10.176.245.82 object Z2T3GBSFVLM01 eq tftp 
+access-list GLOBALMOBILE-TRANSIT_access_in extended permit tcp host 10.176.245.82 object Z2T3GBSFVLM01 eq ftp 
+access-list GLOBALMOBILE-TRANSIT_access_in extended deny ip any4 any4 log 
+access-list ips_traffic extended permit ip any any 
+pager lines 25
+logging enable
+logging timestamp
+logging buffer-size 8192
+logging console critical
+logging monitor emergencies
+logging buffered informational
+logging trap informational
+logging history notifications
+logging asdm informational
+logging from-address ASA-AYL-5520-G9-A4@bat.com
+logging facility 21
+logging device-id hostname
+logging host Corporate 10.94.213.104
+logging debug-trace
+logging class auth trap warnings 
+no logging message 106015
+no logging message 313001
+no logging message 313008
+no logging message 106023
+no logging message 710003
+no logging message 106100
+no logging message 302015
+no logging message 302014
+no logging message 302013
+no logging message 302018
+no logging message 302017
+no logging message 302016
+no logging message 302021
+no logging message 302020
+flow-export template timeout-rate 1
+flow-export delay flow-create 60
+mtu MOTL-MANAGEMENT 1500
+mtu EAI-DEV 1500
+mtu GL520POD 1500
+mtu MISC-DEV 1500
+mtu AKKADE-DEV 1500
+mtu PARITY-DEV 1500
+mtu WIPRODEV 1500
+mtu HQIT-CLIENT-LAN 1500
+mtu GLOBALMOBILE-TRANSIT 1500
+mtu GLOBALIPT-CLIENTS 1500
+mtu SBS-DEV 1500
+mtu HCL-DELL-2012 1500
+mtu GL570-ITE-FIXED 1500
+mtu GL573-ITE-BATGEN 1500
+mtu GL575-ITE-OUTSIDE-DMZ 1500
+mtu ONEWEB 1500
+mtu GL580-ITE-DHCP 1500
+mtu GL585-ITE-INSIDE-DMZ 1500
+mtu WIFI-DEV 1500
+mtu Corporate 1500
+mtu Internet 1500
+ip verify reverse-path interface Internet
+ip audit attack action alarm drop
+no failover
+icmp unreachable rate-limit 1 burst-size 1
+icmp permit any SBS-DEV
+icmp permit any WIFI-DEV
+icmp permit any Corporate
+asdm image disk0:/asdm-647.bin
+no asdm history enable
+arp timeout 14400
+no arp permit-nonconnected
+!
+object network obj-10.176.245.192
+ nat (GLOBALMOBILE-TRANSIT,Internet) dynamic interface
+object network obj-10.176.245.128
+ nat (WIFI-DEV,Internet) dynamic interface
+access-group MOTL-MANAGEMENT_access_in_1 in interface MOTL-MANAGEMENT
+access-group EAI-DEV_access_in_1 in interface EAI-DEV
+access-group GL520POD in interface GL520POD
+access-group MISC-DEV_access_in in interface MISC-DEV
+access-group AKKADE-DEV_access_in in interface AKKADE-DEV
+access-group PARITY-DEV in interface PARITY-DEV
+access-group WIPRODEV in interface WIPRODEV
+access-group HQIT-CLIENT-LAN_access_in in interface HQIT-CLIENT-LAN
+access-group GLOBALMOBILE-TRANSIT_access_in in interface GLOBALMOBILE-TRANSIT
+access-group GLOBALIPT-CLIENTS_access_in in interface GLOBALIPT-CLIENTS
+access-group SBS-DEV_access_in in interface SBS-DEV
+access-group HCL-DELL-2012_access_in in interface HCL-DELL-2012
+access-group GL570-ITE-FIXED in interface GL570-ITE-FIXED
+access-group GL573-ITE-BATGEN in interface GL573-ITE-BATGEN
+access-group ONEWEB_access_in in interface ONEWEB
+access-group GL580-ITE-DHCP in interface GL580-ITE-DHCP
+access-group GL585-ITE-INSIDE-DMZ_in in interface GL585-ITE-INSIDE-DMZ
+access-group WIFI-DEV_access_in in interface WIFI-DEV
+access-group Corporate_access_in in interface Corporate
+access-group Internet in interface Internet
+route Internet 0.0.0.0 0.0.0.0 62.7.71.225 1 
+route Corporate 10.0.0.0 255.0.0.0 10.176.194.166 1 
+route Corporate 10.40.8.0 255.255.254.0 10.176.194.166 1 
+route GLOBALMOBILE-TRANSIT 10.176.245.192 255.255.255.224 10.176.245.82 1 
+route Corporate 146.62.0.0 255.255.0.0 10.176.194.166 1 
+route Corporate 159.254.0.0 255.255.0.0 10.176.194.166 1 
+route Corporate 164.137.0.0 255.255.0.0 10.176.194.166 1 
+route Corporate 165.75.0.0 255.255.0.0 10.176.194.166 1 
+timeout xlate 1:00:00
+timeout pat-xlate 0:00:30
+timeout conn 0:30:00 half-closed 0:10:00 udp 0:02:00 icmp 0:00:02
+timeout sunrpc 0:10:00 h323 0:05:00 h225 1:00:00 mgcp 0:05:00 mgcp-pat 0:05:00
+timeout sip 0:30:00 sip_media 0:02:00 sip-invite 0:03:00 sip-disconnect 0:02:00
+timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+timeout tcp-proxy-reassembly 0:01:00
+timeout floating-conn 0:00:00
+dynamic-access-policy-record DfltAccessPolicy
+aaa-server Tac_Admin protocol tacacs+
+aaa-server Tac_Admin (Corporate) host 10.178.236.11
+ key *****
+aaa-server Tac_Admin (Corporate) host 10.178.236.18
+ key *****
+aaa-server tac_admin protocol tacacs+
+user-identity default-domain LOCAL
+aaa authentication http console Tac_Admin LOCAL
+aaa authentication ssh console Tac_Admin LOCAL
+aaa authentication serial console Tac_Admin LOCAL
+aaa authentication enable console Tac_Admin LOCAL
+aaa authorization command Tac_Admin LOCAL
+aaa accounting serial console Tac_Admin
+aaa accounting ssh console Tac_Admin
+aaa accounting enable console Tac_Admin
+aaa accounting command privilege 15 Tac_Admin
+aaa authorization exec authentication-server 
+http server enable
+http server idle-timeout 20
+http 10.178.236.12 255.255.255.255 Corporate
+snmp-server group snmpv3group v3 priv 
+snmp-server user snmpv3user1 snmpv3group v3 encrypted auth md5 0e:d7:0d:91:d1:4d:54:87:c7:1f:b4:22:c1:b0:c4:97 priv aes 256 94:c2:90:42:82:1a:03:78:60:6e:9e:84:9b:c9:cf:67:c3:a3:1d:9a:39:ff:b9:02:de:73:1d:dc:dc:cf:19:4a 
+snmp-server host Corporate 10.176.209.86 poll community *****
+snmp-server host Corporate 10.176.210.70 community ***** version 2c
+snmp-server host Corporate CISCOWORKS poll community *****
+snmp-server host Corporate 10.94.194.11 poll community *****
+snmp-server host Corporate 10.94.194.13 poll community *****
+snmp-server host Corporate 10.94.194.16 community *****
+snmp-server host Corporate 10.94.194.20 community *****
+snmp-server host Corporate 10.97.194.33 poll community *****
+snmp-server host Corporate 10.178.236.13 version 3 snmpv3user1
+snmp-server location GB-AYL-G9-A4
+snmp-server contact Central IT
+snmp-server enable traps syslog
+snmp-server enable traps ipsec start stop
+snmp-server enable traps entity config-change fru-insert fru-remove
+snmp-server enable traps remote-access session-threshold-exceeded
+fragment chain 1 Internet
+auth-prompt prompt Username: 
+auth-prompt reject ****************************** !!!!!!!!!! ACCESS DENIED !!!!!!!!!! ****************************** 
+crypto ipsec security-association pmtu-aging infinite
+crypto ca trustpool policy
+no crypto isakmp nat-traversal
+client-update enable
+telnet 10.178.236.12 255.255.255.255 Corporate
+telnet 10.94.230.16 255.255.255.255 Corporate
+telnet 10.94.230.0 255.255.255.0 Corporate
+telnet timeout 30
+ssh stricthostkeycheck
+ssh 10.178.236.12 255.255.255.255 Corporate
+ssh 10.94.230.0 255.255.255.0 Corporate
+ssh 10.94.231.0 255.255.255.0 Corporate
+ssh 10.178.236.15 255.255.255.255 Corporate
+ssh 10.178.128.0 255.255.240.0 Corporate
+ssh 10.40.8.0 255.255.254.0 Corporate
+ssh timeout 20
+ssh version 2
+ssh key-exchange group dh-group1-sha1
+console timeout 20
+management-access Corporate
+dhcprelay server Z2T3GBGLPLS06 Corporate
+dhcprelay server Z2T3GBEAVDS01 GL570-ITE-FIXED
+dhcprelay enable WIPRODEV
+dhcprelay enable GL573-ITE-BATGEN
+dhcprelay enable GL580-ITE-DHCP
+dhcprelay timeout 60
+threat-detection basic-threat
+threat-detection statistics access-list
+no threat-detection statistics tcp-intercept
+ntp server 10.94.234.41 source Corporate prefer
+ntp server Z2T3GBSFPLN09 source Corporate prefer
+username mssp-wipro password <removed> privilege 15
+!
+class-map class_ftp
+ match port tcp eq 9421
+class-map ftp-class
+ match access-list ftp-list
+class-map inspection_default
+ match default-inspection-traffic
+class-map ips
+ match access-list ips_traffic
+!
+!
+policy-map global_policy
+ class ips
+  ips inline fail-open
+policy-map type inspect dns migrated_dns_map_1
+ parameters
+  message-length maximum 512
+  id-randomization
+  id-mismatch action log
+policy-map asa_global_fw_policy
+ class inspection_default
+  inspect dns migrated_dns_map_1 
+  inspect h323 h225 
+  inspect h323 ras 
+  inspect netbios 
+  inspect rsh 
+  inspect rtsp 
+  inspect skinny  
+  inspect sqlnet 
+  inspect sunrpc 
+  inspect tftp 
+  inspect sip  
+  inspect xdmcp 
+  inspect icmp error 
+  inspect ftp 
+  inspect http 
+  inspect esmtp 
+ class class_ftp
+  inspect ftp 
+!
+service-policy asa_global_fw_policy global
+privilege cmd level 2 mode exec command terminal
+privilege show level 2 mode exec command running-config
+privilege show level 2 mode exec command xlate
+privilege show level 2 mode exec command names
+privilege show level 2 mode exec command interface
+privilege show level 2 mode exec command access-list
+privilege show level 2 mode exec command route
+privilege show level 2 mode exec command crypto
+privilege show level 2 mode exec command ntp
+privilege show level 2 mode configure command names
+privilege show level 2 mode configure command interface
+privilege show level 2 mode configure command access-list
+privilege show level 2 mode configure command route
+privilege show level 2 mode configure command crypto
+privilege show level 2 mode configure command ntp
+privilege cmd level 2 mode configure command terminal
+prompt hostname context 
+no call-home reporting anonymous
+call-home
+ profile CiscoTAC-1
+  no active
+  destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService
+  destination address email callhome@cisco.com
+  destination transport-method http
+  subscribe-to-alert-group diagnostic
+  subscribe-to-alert-group environment
+  subscribe-to-alert-group inventory periodic monthly
+  subscribe-to-alert-group configuration periodic monthly
+  subscribe-to-alert-group telemetry periodic daily
+Cryptochecksum:bf9c88b3dcf3c7ff89adfd047da18deb
+: end
+Cannot open disk0:/csco_config/97/bookmarks/index.ini
+
+------------------ export webvpn customization DfltCustomization stdout ------------------
+<external-portal>
+        <mode>disable</mode>
+        <url></url>
+        <method>get</method>
+        <preload-page-url><![CDATA[]]></preload-page-url>
+        <before-post-script><![CDATA[]]></before-post-script>
+        <wait-time>10</wait-time>
+        <use-smart-tunnel>no</use-smart-tunnel>
+        <post-param>
+            <name><![CDATA[]]></name>
+            <value><![CDATA[]]></value> 
+        </post-param>
+      </external-portal>
+
+------------------ more disk0:/sdesktop/data.xml ------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="3.0">
+  <multilocation>
+    <field type="dropdown" name="dVPNWindowsFailureWebBrowsing" value="0" />
+    <field type="dropdown" name="dVPNWindowsFailureFileAccess" value="0" />
+    <field type="dropdown" name="dVPNWindowsFailurePortForwarding" value="0" />
+    <field type="dropdown" name="dVPNWindowsFailureFullTunneling" value="0" />
+  </multilocation>
+  <pocketpc>
+    <field type="dropdown" name="dVPNPocketPCWebBrowsing" value="1" />
+    <field type="dropdown" name="dVPNPocketPCFileAccess" value="1" />
+  </pocketpc>
+  <cleanermaclinux>
+    <field type="dropdown" name="dMacLinuxCleanerCleanTimeout" value="1" />
+    <field type="dropdown" name="dMacLinuxCleanerSecureDeletePass" value="3" />
+    <field type="dropdown" name="dVPNMacLinuxWebBrowsing" value="0" />
+    <field type="dropdown" name="dVPNMacLinuxFileAccess" value="0" />
+    <field type="dropdown" name="dVPNMacLinuxPortForwarding" value="0" />
+  </cleanermaclinux>
+</data>
+
+
+
+------------------ show ak47 detailed ------------------
+
+instance 0001 0x757857d0 (Unicorn Proxy Thread) arena 0x75785720 fiber count 3
+Arena 0x75785720 of 4973160 bytes (66 blocks of size 76000), maximum 1073741824
+  1068768664 free bytes (100%; 14062 blocks, zone 0)
+  Arena is dynamically allocated, not contiguous
+  Features: GroupMgmt: SET, MemDebugLog: unset
+
+instance 0002 0x74355648 (rtcli async executor process) arena 0x743565b0 fiber count 2
+Arena 0x743565b0 of 3371504 bytes (52 blocks of size 65536), no size limit
+  Arena is dynamically allocated, not contiguous
+  Features: GroupMgmt: unset, MemDebugLog: unset
+
+instance 0003 0x6ef533f8 (UserFromCert Thread) arena 0x6ef53340 fiber count 2
+Arena 0x6ef53340 of 1672000 bytes (22 blocks of size 76000), no size limit
+  Arena is dynamically allocated, not contiguous
+  Features: GroupMgmt: unset, MemDebugLog: unset
+
+instance 0004 0x6ef50e60 (aaa_shim_thread) arena 0x6ef4b170 fiber count 2
+Arena 0x6ef4b170 of 304000 bytes (4 blocks of size 76000), maximum 71303168
+  70999168 free bytes (100%; 934 blocks, zone 0)
+  Arena is dynamically allocated, not contiguous
+  Features: GroupMgmt: SET, MemDebugLog: unset
+
+instance 0005 0x6fc83d10 (netfs_thread_init) arena 0x6fc83c60 fiber count 2
+Arena 0x6fc83c60 of 792488 bytes (12 blocks of size 66048), no size limit
+  Arena is dynamically allocated, not contiguous
+  Features: GroupMgmt: SET, MemDebugLog: unset
+
+
+------------------ show startup-config errors ------------------
+
+Reading from flash...
+!!!!!!!!!!!!!!!!WARNING: The current delay flow-create value configuration may cause flow-update events to appear before flow-creation event.
+*** Output from config line 1321, "flow-export delay flow-c..."
+Device Manager image set, but unable to find disk0:/asdm-647.bin
+*** Output from config line 1350, "asdm image disk0:/asdm-6..."
+
+------------------ console logs ------------------
+
+Message #1 : Message #2 : 
+Total SSMs found: 1
+Message #3 : ASA-SSM-20, SN JAB092304U6, HW ver 1.0, FW ver 1.0(10)0
+Message #4 : 
+Total NICs found: 7
+Message #5 : mcwa Message #6 : i82557 Ethernet at irq 11Message #7 :   MAC: 0012.808c.4010
+Message #8 : mcwa Message #9 : i82557 Ethernet at irq  5Message #10 :   MAC: 0000.0001.0001
+Message #11 : i82547GI rev00 Gigabit Ethernet @ irq11 dev 1 index 05Message #12 :  MAC: 0000.0001.0002
+Message #13 : i82546GB rev03 Gigabit Ethernet @ irq09 dev 2 index 03Message #14 :  MAC: 0012.808c.400f
+Message #15 : i82546GB rev03 Gigabit Ethernet @ irq09 dev 2 index 02Message #16 :  MAC: 0012.808c.400e
+Message #17 : i82546GB rev03 Gigabit Ethernet @ irq09 dev 3 index 01Message #18 :  MAC: 0012.808c.400d
+Message #19 : i82546GB rev03 Gigabit Ethernet @ irq09 dev 3 index 00Message #20 :  MAC: 0012.808c.400c
+Message #21 : Verify the activation-key, it might take a while...
+Message #22 : Running Permanent Message #23 : Activation Key: Message #24 : 0x391ff34e Message #25 : 0x4ce5edd3 Message #26 : 0x689010fc Message #27 : 0x8c907820 Message #28 : 0x4c26c9ac Message #29 : 
+Message #30 : 
+Licensed Message #31 : features for this platform:
+Message #32 : Maximum Physical Interfaces       : Unlimited      perpetual
+Message #33 : Maximum VLANs                     : 150            perpetual
+Message #34 : Inside Hosts                      : Unlimited      perpetual
+Message #35 : Failover                          : Active/Active  perpetual
+Message #36 : Encryption-DES                    : Enabled        perpetual
+Message #37 : Encryption-3DES-AES               : Enabled        perpetual
+Message #38 : Security Contexts                 : 2              perpetual
+Message #39 : GTP/GPRS                          : Disabled       perpetual
+Message #40 : AnyConnect Premium Peers          : 2              perpetual
+Message #41 : AnyConnect Essentials             : Disabled       perpetual
+Message #42 : Other VPN Peers                   : 750            perpetual
+Message #43 : Total VPN Peers                   : 750            perpetual
+Message #44 : Shared License                    : Disabled       perpetual
+Message #45 : AnyConnect for Mobile             : Disabled       perpetual
+Message #46 : AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Message #47 : Advanced Endpoint Assessment      : Disabled       perpetual
+Message #48 : UC Phone Proxy Sessions           : 2              perpetual
+Message #49 : Total UC Proxy Sessions           : 2              perpetual
+Message #50 : Botnet Traffic Filter             : Disabled       perpetual
+Message #51 : Intercompany Media Engine         : Disabled       perpetual
+Message #52 : Cluster                           : Disabled       perpetual
+Message #53 : 
+This platform has an ASA 5520 VPN Plus license.
+Message #54 : 
+Message #55 : Encryption hardware device : Cisco ASA-55xx on-board accelerator (revision 0x0)
+Message #56 :                              Boot microcode        : CN1000-MC-BOOT-2.00 
+Message #57 :                              SSL/IKE microcode     : CNlite-MC-SSLm-PLUS-2.08
+Message #58 :                              IPSec microcode       : CNlite-MC-IPSECm-MAIN-2.09
+Message #59 : 
+Cisco Adaptive Security Appliance Software Version 9.1(7)16 
+Message #60 : 
+Message #61 :   ****************************** Warning *******************************
+Message #62 :   This product contains cryptographic features and is
+Message #63 :   subject to United States and local country laws
+Message #64 :   governing, import, export, transfer, and use.
+Message #65 :   Delivery of Cisco cryptographic products does not
+Message #66 :   imply third-party authority to import, export,
+Message #67 :   distribute, or use encryption. Importers, exporters,
+Message #68 :   distributors and users are responsible for compliance
+Message #69 :   with U.S. and local country laws. By using this
+Message #70 :   product you agree to comply with applicable laws and
+Message #71 :   regulations. If you are unable to comply with U.S.
+Message #72 :   and local laws, return the enclosed items immediately.
+Message #73 : 
+Message #74 :   A summary of U.S. laws governing Cisco cryptographic
+Message #75 :   products may be found at:
+Message #76 :   http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+Message #77 : 
+Message #78 :   If you require further assistance please contact us by
+Message #79 :   sending email to export@cisco.com.
+Message #80 :   ******************************* Warning *******************************
+Message #81 : 
+Message #82 : This product includes software developed by the OpenSSL Project
+Message #83 : for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Message #84 : Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+Message #85 : All rights reserved.
+Message #86 : Copyright (c) 1998-2011 The OpenSSL Project.
+Message #87 : All rights reserved.
+
+Message #88 : This product includes software developed at the University of
+Message #89 : California, Irvine for use in the DAV Explorer project
+Message #90 : (http://www.ics.uci.edu/~webdav/)
+Message #91 : Copyright (c) 1999-2005 Regents of the University of California.
+Message #92 : All rights reserved.
+
+Message #93 : Busybox, version 1.16.1, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #94 : 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA
+Message #95 : Busybox comes with ABSOLUTELY NO WARRANTY.
+Message #96 : This is free software, and you are welcome to redistribute it under the General 
+Message #97 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #98 : See User Manual (''Licensing'') for details.
+
+Message #99 : DOSFSTOOLS, version 2.11, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #100 : 59 Temple Place, Suite 330, Boston, MA 02111-1307
+Message #101 : 675 Mass Ave, Cambridge, MA 02139
+Message #102 : DOSFSTOOLS comes with ABSOLUTELY NO WARRANTY.
+Message #103 : This is free software, and you are welcome to redistribute it under the General 
+Message #104 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #105 : See User Manual (''Licensing'') for details.
+
+Message #106 : grub, version 0.94, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #107 : 59 Temple Place, Suite 330, Boston, MA 02111-1307
+Message #108 : grub comes with ABSOLUTELY NO WARRANTY.
+Message #109 : This is free software, and you are welcome to redistribute it under the General 
+Message #110 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #111 : See User Manual (''Licensing'') for details.
+
+Message #112 : libgcc, version 4.3, Copyright (C) 2007 Free Software Foundation, Inc.
+Message #113 : libgcc comes with ABSOLUTELY NO WARRANTY.
+Message #114 : This is free software, and you are welcome to redistribute it under the General 
+Message #115 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #116 : See User Manual (''Licensing'') for details.
+
+Message #117 : libstdc++, version 4.3, Copyright (C) 2007 Free Software Foundation, Inc.
+Message #118 : libstdc++ comes with ABSOLUTELY NO WARRANTY.
+Message #119 : This is free software, and you are welcome to redistribute it under the General 
+Message #120 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #121 : See User Manual (''Licensing'') for details.
+
+Message #122 : Linux kernel, version 2.6.29.6, Copyright (C) 1989, 1991 Free Software 
+Message #123 : Foundation, Inc.
+Message #124 : 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA
+Message #125 : Linux kernel comes with ABSOLUTELY NO WARRANTY.
+Message #126 : This is free software, and you are welcome to redistribute it under the General 
+Message #127 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #128 : See User Manual (''Licensing'') for details.
+
+Message #129 : module-init-tools, version 3.10, Copyright (C) 1989, 1991 Free Software 
+Message #130 : Foundation, Inc.
+Message #131 : 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+Message #132 : module-init-tools comes with ABSOLUTELY NO WARRANTY.
+Message #133 : This is free software, and you are welcome to redistribute it under the General 
+Message #134 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #135 : See User Manual (''Licensing'') for details.
+
+Message #136 : numactl, version 2.0.3, Copyright (C) 2008 SGI.
+Message #137 : Author: Andi Kleen, SUSE Labs
+Message #138 : Version 2.0.0 by Cliff Wickman, Chritopher Lameter and Lee Schermerhorn
+Message #139 : numactl comes with ABSOLUTELY NO WARRANTY.
+Message #140 : This is free software, and you are welcome to redistribute it under the General 
+Message #141 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #142 : See User Manual (''Licensing'') for details.
+
+Message #143 : pciutils, version 3.1.4, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #144 : 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA
+Message #145 : pciutils comes with ABSOLUTELY NO WARRANTY.
+Message #146 : This is free software, and you are welcome to redistribute it under the General 
+Message #147 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #148 : See User Manual (''Licensing'') for details.
+
+Message #149 : readline, version 5.2, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #150 : 59 Temple Place, Suite 330, Boston, MA 02111 USA
+Message #151 : readline comes with ABSOLUTELY NO WARRANTY.
+Message #152 : This is free software, and you are welcome to redistribute it under the General 
+Message #153 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #154 : See User Manual (''Licensing'') for details.
+
+Message #155 : udev, version 146, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #156 : 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA
+Message #157 : udev comes with ABSOLUTELY NO WARRANTY.
+Message #158 : This is free software, and you are welcome to redistribute it under the General 
+Message #159 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #160 : See User Manual (''Licensing'') for details.
+
+Message #161 : util-linux, version 2.16.1, Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+Message #162 : The following components, built for inclusion in Busybox.
+Message #163 : The following components from util-linux come with ABSOLUTELY NO WARRANTY.
+Message #164 : fdisk:
+Message #165 :   Copyright (C) 1992  A. V. Le Blanc (LeBlanc@mcc.ac.uk)
+Message #166 :   Copyright (C) 2001,2002 Vladimir Oleynik <dzo@simtreas.ru> (initial bb port)
+Message #167 : dmesg:
+Message #168 :   Copyright 2006 Rob Landley <rob@landley.net>
+Message #169 :   Copyright 2006 Bernhard Reutner-Fischer <rep.nop@aon.at>
+Message #170 : mkswap:
+Message #171 :   Copyright 2006 Rob Landley <rob@landley.net>
+Message #172 : mount:
+Message #173 :   Copyright (C) 1995, 1996 by Bruce Perens <bruce@pixar.com>.
+Message #174 :   Copyright (C) 1999-2004 by Erik Andersen <andersen@codepoet.org>
+Message #175 :   Copyright (C) 2005-2006 by Rob Landley <rob@landley.net>
+Message #176 : umount:
+Message #177 :   Copyright (C) 1999-2004 by Erik Andersen <andersen@codepoet.org>
+Message #178 :   Copyright (C) 2005 by Rob Landley <rob@landley.net>
+Message #179 : This is free software, and you are welcome to redistribute it under the General
+Message #180 : Public License v.2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Message #181 : See User Manual (''Licensing'') for details.
+
+Message #182 : Cisco Adapative Security Appliance Software, version 9.1,
+Message #183 : Copyright (c) 1996-2017 by Cisco Systems, Inc.
+Message #184 : Certain components of Cisco ASA Software, Version 9.1 are licensed under the GNU
+Message #185 : Lesser Public License (LGPL) Version 2.1.  The software code licensed under LGPL
+Message #186 : Version 2.1 is free software that comes with ABSOLUTELY NO WARRANTY.  You can
+Message #187 : redistribute and/or modify such LGPL code under the terms of LGPL Version 2.1
+Message #188 : (http://www.gnu.org/licenses/lgpl-2.1.html).  See User Manual for licensing 
+Message #189 : details.
+
+Message #190 :                 Restricted Rights Legend
+
+Message #191 : Use, duplication, or disclosure by the Government is
+Message #192 : subject to restrictions as set forth in subparagraph
+Message #193 : (c) of the Commercial Computer Software - Restricted
+Message #194 : Rights clause at FAR sec. 52.227-19 and subparagraph
+Message #195 : (c) (1) (ii) of the Rights in Technical Data and Computer
+Message #196 : Software clause at DFARS sec. 252.227-7013.
+
+Message #197 :                 Cisco Systems, Inc.
+Message #198 :                 170 West Tasman Drive
+Message #199 :                 San Jose, California 95134-1706
+
+Message #200 : 
+INFO: Power-On Self-Test in process.
+Message #201 : .Message #202 : .Message #203 : .Message #204 : .Message #205 : .Message #206 : .Message #207 : .Message #208 : .Message #209 : .Message #210 : .Message #211 : .Message #212 : .Message #213 : .Message #214 : .Message #215 : .Message #216 : .Message #217 : .Message #218 : .Message #219 : .Message #220 : .Message #221 : .Message #222 : .Message #223 : .Message #224 : .Message #225 : .Message #226 : .Message #227 : .Message #228 : .Message #229 : .Message #230 : .Message #231 : .Message #232 : .Message #233 : .Message #234 : .Message #235 : .Message #236 : .Message #237 : .Message #238 : .Message #239 : .Message #240 : .Message #241 : .Message #242 : .Message #243 : .Message #244 : .Message #245 : .Message #246 : .Message #247 : .Message #248 : .Message #249 : .Message #250 : .Message #251 : .Message #252 : .Message #253 : .Message #254 : .Message #255 : .Message #256 : .Message #257 : .Message #258 : .Message #259 : .Message #260 : 
+INFO: Power-On Self-Test complete.
+
+BAT-WER-GBSF01-ASA-01# 
